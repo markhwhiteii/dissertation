@@ -1,2 +1,2 @@
-# dissertation
-Repository for my dissertation studies, data, and manuscript
+# Dissertation
+Repository for my dissertation R code, data, and manuscript.
