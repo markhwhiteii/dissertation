@@ -1,7 +1,7 @@
 library(tidyverse)
 dat <- read_csv("../data/study5.csv")
-dat <- dat[-73, ] # partial response
-dat <- dat %>% 
+auth5 <- auth5[-73, ] # partial response
+auth5 <- auth5 %>% 
   mutate(
     neg_auth = (nowill_auth_gen + nowill_true_honest + 
                   lazy_auth_gen + lazy_true_honest) / 4,
@@ -15,18 +15,18 @@ dat <- dat %>%
               prej_5 + prej_6 + prej_7) / 7
   )
 
-round(cor(dat[, 21:28]), 2)
-psych::fa(cov(dat[, 21:28]), nfactors = 2, fm = "pa", rotate = "oblimin")
+round(cor(auth5[, 21:28]), 2)
+psych::fa(cov(auth5[, 21:28]), nfactors = 2, fm = "pa", rotate = "oblimin")
 
-with(dat, cor.test(neg_auth, neg_pc))
+with(auth5, cor.test(neg_auth, neg_pc))
 
-t.test(prej ~ cond, dat)
+t.test(prej ~ cond, auth5)
 
-mod1 <- lm(neg_auth ~ prej * cond, dat)
+mod1 <- lm(neg_auth ~ prej * cond, auth5)
 summary(mod1)
 #plot(mod1)
 
-ggplot(dat, aes(x = prej, y = neg_auth, color = cond)) +
+ggplot(auth5, aes(x = prej, y = neg_auth, color = cond)) +
   geom_jitter() +
   geom_smooth(method = "lm", se = FALSE) +
   theme_minimal() +
@@ -34,11 +34,11 @@ ggplot(dat, aes(x = prej, y = neg_auth, color = cond)) +
   theme(text = element_text(size = 16), legend.position = "top",
         legend.title = element_blank())
 
-mod2 <- lm(neg_pc ~ prej * cond, dat)
+mod2 <- lm(neg_pc ~ prej * cond, auth5)
 summary(mod2)
 #plot(mod2)
 
-ggplot(dat, aes(x = prej, y = neg_pc, color = cond)) +
+ggplot(auth5, aes(x = prej, y = neg_pc, color = cond)) +
   geom_jitter() +
   geom_smooth(method = "lm", se = FALSE) +
   theme_minimal() +
@@ -46,7 +46,7 @@ ggplot(dat, aes(x = prej, y = neg_pc, color = cond)) +
   theme(text = element_text(size = 16), legend.position = "top",
         legend.title = element_blank())
 
-ggplot(dat, aes(x = prej, y = pos_auth, color = cond)) +
+ggplot(auth5, aes(x = prej, y = pos_auth, color = cond)) +
   geom_jitter() +
   geom_smooth(method = "lm", se = FALSE) +
   theme_minimal() +
@@ -54,9 +54,9 @@ ggplot(dat, aes(x = prej, y = pos_auth, color = cond)) +
   theme(text = element_text(size = 16), legend.position = "top",
         legend.title = element_blank())
 
-with(dat, cor.test(prej, pos_auth))
+with(auth5, cor.test(prej, pos_auth))
 
-ggplot(dat, aes(x = prej, y = pos_pc, color = cond)) +
+ggplot(auth5, aes(x = prej, y = pos_pc, color = cond)) +
   geom_jitter() +
   geom_smooth(method = "lm", se = FALSE) +
   theme_minimal() +
@@ -64,6 +64,6 @@ ggplot(dat, aes(x = prej, y = pos_pc, color = cond)) +
   theme(text = element_text(size = 16), legend.position = "top",
         legend.title = element_blank())
 
-with(dat, cor.test(prej, pos_pc))
+with(auth5, cor.test(prej, pos_pc))
 
-round(cor(dat[, c("prej", "neg_auth", "neg_pc", "pos_auth", "pos_pc")]), 3)
+round(cor(auth5[, c("prej", "neg_auth", "neg_pc", "pos_auth", "pos_pc")]), 3)
