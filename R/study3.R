@@ -3,7 +3,7 @@ library(lme4)
 library(lmerTest)
 library(mscelns) # not on CRAN, see https://github.com/markhwhiteii/mscelns
 
-auth3 <- read_csv("study3.csv")
+auth3 <- read_csv("../data/study3.csv")
 
 ## tidying data
 colnames(auth3)[1:20] <- c(
