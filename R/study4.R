@@ -42,7 +42,3 @@ round(summary(lm(authneg ~ cond_relevel * dislike, auth4))$coef[3, ], 3)
 summary(lm(authneg ~ cond * dislike + willpower + fear, auth4))
 # positive statements
 summary(lm(authpos ~ cond * dislike, auth4))
-
-## problem: correlation between rule-breaking and authenticity is *positive*
-## so this supports correspondent inference, but the condition does not?
-cor.test(auth4$rulesneg, auth4$authneg)
