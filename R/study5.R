@@ -29,7 +29,6 @@ psych::fa(cov(auth5[, 29:36]), nfactors = 2, fm = "pa", rotate = "oblimin")
 with(auth5, cor.test(neg_auth, neg_pc))
 with(auth5, cor.test(pos_auth, pos_pc))
 cor(auth5[, c("prej", "neg_auth", "neg_pc")])
-cancor(auth5[, c("prej")], auth5[, c("neg_auth", "neg_pc")])
 
 t.test(prej ~ cond, auth5)
 
