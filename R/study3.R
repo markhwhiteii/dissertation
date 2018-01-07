@@ -90,8 +90,3 @@ mlm_ss(model3, -1, 0, 1)$simple_slopes
 model4 <- lmer(authenticity ~ prejudice * pc + 
                  (1 + prejudice | id), data = auth3)
 summary(model4)
-
-model5 <- lmer(authenticity ~ prejudice * rw_polid + 
-                 (1 + prejudice | id), data = auth3)
-summary(model5)
-mlm_ss(model5, -1, 0, 1)$simple_slopes
