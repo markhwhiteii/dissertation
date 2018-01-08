@@ -24,6 +24,7 @@ psych::fa(auth6[, c("atts_1", "atts_2", "atts_3")], nfactors = 1, fm = "pa")
 
 ## primary hypothesis
 summary(lm(auth ~ prej * cond, auth6))
+summary(lm(auth ~ prej * relevel(cond, ref = "auth_good"), auth6))
 
 ggplot(auth6, aes(x = prej, y = auth, color = cond)) +
   geom_jitter() +
