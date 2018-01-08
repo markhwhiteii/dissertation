@@ -12,8 +12,7 @@
     - jsm
     - free speech paper
 * theories behind causal mechanisms for relationship
-    - correspondent inference
-    - norms
+    - attribution and norms
     - balance
     - motivated reasoning
 * overview of current studies
