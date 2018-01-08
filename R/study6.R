@@ -4,7 +4,7 @@ library(mscelns) # https://github.com/markhwhiteii/mscelns
 ## tidying data
 auth6 <- read_csv("../data/study6.csv") %>% 
   mutate(cond = as.factor(cond),
-         auth = (dvs_1 + dvs_2) / 3,
+         auth = (dvs_1 + dvs_2) / 2,
          prej = (atts_1 + atts_2 + atts_3) / 3,
          rw_polid = (conserv + (8 - democrat)) / 3)
 
@@ -16,6 +16,11 @@ with(auth6, list(
 
 ## manip check
 t_table(auth6, c("check_self", "check_norm"), "cond", FALSE)
+
+## scale
+cor.test(~ dvs_1 + dvs_2, auth6)
+cor(auth6[, c("atts_1", "atts_2", "atts_3")])
+psych::fa(auth6[, c("atts_1", "atts_2", "atts_3")], nfactors = 1, fm = "pa")
 
 ## primary hypothesis
 summary(lm(auth ~ prej * cond, auth6))
@@ -38,3 +43,4 @@ with(auth6, cor.test(auth, prej))
 ## but p-value isn't really in the range you'd want after digging around in data
 summary(lm(auth ~ prej * check_norm, auth6))
 cor.test(as.numeric(auth6$cond) - 1, auth6$check_norm)
+
