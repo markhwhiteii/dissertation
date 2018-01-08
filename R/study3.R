@@ -90,3 +90,13 @@ mlm_ss(model3, -1, 0, 1)$simple_slopes
 model4 <- lmer(authenticity ~ prejudice * pc + 
                  (1 + prejudice | id), data = auth3)
 summary(model4)
+
+## "mediation"
+med_fit <- lmer(normativity ~ prejudice + 
+                  (1 + prejudice | id), 
+                data = auth3)
+round(summary(med_fit)$coef, 5)
+out_fit <- lmer(authenticity ~ prejudice + normativity + 
+                  (1 + prejudice + normativity | id), 
+                data = auth3)
+round(summary(out_fit)$coef, 5)
