@@ -1,0 +1,1 @@
+* re-analyze control correlations in study 1 on their own. report those instead. don't do that whole confusing table. just keep the correlation comparisons that are in the text, since those are the most important, anyway. this is easier to read and captures phenomenon better (i.e., averaging across all three control statements doesn't mean much)
