@@ -47,6 +47,7 @@ vars <- c(
   "prej_muslim", "prej_politician", "disl_pizza", "disl_beach", "disl_cookies"
 )
 round(cor(auth1[ ,vars]), 2)[6:10, 1:5]
+cor.test(~ prej_muslim + auth_muslim, auth1)
 cor.test(~ prej_politician + auth_politician, auth1) # r >= |.18| sig cor
 
 ## creating wrapper for cocor
