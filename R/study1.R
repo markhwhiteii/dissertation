@@ -32,8 +32,22 @@ auth1 <- read_csv("../data/study1.csv") %>%
         politicians_4 + politicians_5 + (8 - politicians_6) + 
         (8 - politicians_7)
     ) / 7,
-    prej_control = ((8 - filler_1) + (8 - filler_2) + (8 - filler_3)) / 3
+    prej_control = ((8 - filler_1) + (8 - filler_2) + (8 - filler_3)) / 3,
+    disl_pizza = (8 - filler_1),
+    auth_pizza = (filler1_1 + filler1_2 + filler1_3 + filler1_4) / 4,
+    disl_beach = (8 - filler_2),
+    auth_beach = (filler2_1 + filler2_2 + filler2_3 + filler2_4) / 4,
+    disl_cookies = (8 - filler_3),
+    auth_cookies = (filler3_1 + filler3_2 + filler3_3 + filler3_4) / 4
   )
+
+## correlations between variables
+vars <- c(
+  "auth_muslim", "auth_politician", "auth_pizza", "auth_beach", "auth_cookies",
+  "prej_muslim", "prej_politician", "disl_pizza", "disl_beach", "disl_cookies"
+)
+round(cor(auth1[ ,vars]), 2)[6:10, 1:5]
+cor.test(~ prej_politician + auth_politician, auth1) # r >= |.18| sig cor
 
 ## creating wrapper for cocor
 # CAUTION: function may not handle NAs well
@@ -47,20 +61,9 @@ cor_diff_overlap <- function(y, x1, x2, data) {
   )
 }
 
-## correlations between variables
-round(cor(
-  auth1[ , c("auth_muslim", "auth_politician", "auth_control",
-                     "prej_muslim", "prej_politician", "prej_control")]
-), 2)[4:6, 1:3]
-
 ## testing differences between correlations
-# please forgive my copy-and-pasting
 cor_diff_overlap("prej_muslim", "auth_muslim", "auth_politician", auth1)
-cor_diff_overlap("prej_muslim", "auth_muslim", "auth_control", auth1)
 cor_diff_overlap("prej_politician", "auth_politician", "auth_muslim", auth1)
-cor_diff_overlap("prej_politician", "auth_politician", "auth_control", auth1)
-cor_diff_overlap("prej_control", "auth_control", "auth_muslim", auth1)
-cor_diff_overlap("prej_control", "auth_control", "auth_politician", auth1)
 
 ## demographics
 nrow(auth1)
