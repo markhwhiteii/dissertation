@@ -45,6 +45,9 @@ table(auth3$gender)
 table(auth3$race)
 cor.test(auth3$democrat, auth3$conservative)
 
+## power for norm expt
+cor.test(~ I(100 - trans_therm) + trans_desc, data = auth3)
+
 ## to tidy format
 auth3 <- auth3 %>% 
   mutate(id = row_number()) %>% 
