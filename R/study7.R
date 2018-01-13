@@ -1,34 +1,47 @@
 library(tidyverse)
-library(ggExtra)
+library(mscelns) # https://github.com/markhwhiteii/mscelns
+
+## tidying data
 auth7 <- read_csv("../data/study7.csv") %>% 
-  mutate(
-    cond = as.factor(cond),
-    auth = (auth1 + auth2 + auth3 + auth4) / 4,
-    symrac = (symrac1 + symrac2 + (8 - symrac3) + symrac4 + (8 - symrac5) + 
-                (8 - symrac6) + (8 - symrac7) + symrac8) / 8
-  )
+  mutate(cond = as.factor(cond),
+         auth = (dvs_1 + dvs_2) / 2,
+         prej = (atts_1 + atts_2 + atts_3) / 3,
+         rw_polid = (conserv + (8 - democrat)) / 3)
 
-nrow(auth7)
-c(summary(auth7$age), sd(auth7$age))
-prop.table(table(auth7$gender))
-prop.table(table(auth7$race))
+## demographics
+with(auth7, list(
+  length(age), summary(age), sd(age), 
+  prop.table(table(gender)), prop.table(table(ethnicity))
+))
 
-summary(auth7[, grepl("symrac", names(auth7))])
+## manip check
+t_table(auth7, c("check_self", "check_norm"), "cond", FALSE)
 
-mod <- lm(auth ~ symrac * cond, auth7)
-summary(mod)
-summary(lm(auth ~ symrac * relevel(cond, ref = "Directional"), auth7))
+## scale
+cor.test(~ dvs_1 + dvs_2, auth7)
+cor(auth7[, c("atts_1", "atts_2", "atts_3")])
+psych::fa(auth7[, c("atts_1", "atts_2", "atts_3")], nfactors = 1, fm = "pa")
 
-summary(glm(I(auth == 7) ~ symrac * cond, family = binomial, data = auth7))
+## primary hypothesis
+summary(lm(auth ~ prej * cond, auth7))
+summary(lm(auth ~ prej * relevel(cond, ref = "auth_good"), auth7))
 
-plot <- ggplot(auth7, aes(x = symrac, y = auth, group = cond, color = cond)) +
-  geom_jitter(size = 2) +
-  geom_smooth(method = "lm", se = FALSE) +
-  labs(x = "Prejudice", y = "Authenticity") +
+ggplot(auth7, aes(x = prej, y = auth, color = cond)) +
+  geom_jitter() +
+  geom_smooth(method = "lm", se = FALSE) + 
+  labs(x = "Prejudice", y = "Perceived Authenticity") +
+  scale_color_discrete(name = "Authenticity is...", labels = c("Bad", "Good")) +
   theme_light() +
-  theme(legend.title = element_blank(), legend.position = "bottom",
-        text = element_text(size = 16))
+  theme(text = element_text(size = 16), legend.position = "top")
 
-ggMarginal(plot, type = "histogram")
+## condition on authenticity and prejudice separately
+t_table(auth7, c("auth", "prej"), "cond")
 
-cor.test(~ symrac + auth, auth7)
+## replicate previous findings that it is correlated?
+with(auth7, cor.test(auth, prej))
+
+## primary hypothesis works when using the manipulation check
+## but p-value isn't really in the range you'd want after digging around in data
+summary(lm(auth ~ prej * check_norm, auth7))
+cor.test(as.numeric(auth7$cond) - 1, auth7$check_norm)
+

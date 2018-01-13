@@ -1,47 +1,84 @@
 library(tidyverse)
-library(mscelns) # https://github.com/markhwhiteii/mscelns
-
-## tidying data
 auth6 <- read_csv("../data/study6.csv") %>% 
-  mutate(cond = as.factor(cond),
-         auth = (dvs_1 + dvs_2) / 2,
-         prej = (atts_1 + atts_2 + atts_3) / 3,
-         rw_polid = (conserv + (8 - democrat)) / 3)
+  mutate(
+    cond = as.factor(cond),
+    neg_auth = (nowill_auth_gen + nowill_true_honest + 
+                  lazy_auth_gen + lazy_true_honest) / 4,
+    neg_pc = (nowill_pc + nowill_careful_polite +
+                lazy_pc + lazy_careful_polite) / 4,
+    pos_auth = (enviro_auth_gen + enviro_true_honest + 
+                  genes_auth_gen + genes_true_honest) / 4,
+    pos_pc = (enviro_pc + enviro_careful_polite +
+                genes_pc + genes_careful_polite) / 4,
+    prej = (prej_1 + prej_2 + prej_3 + prej_4 +
+              prej_5 + prej_6 + prej_7) / 7
+  )
+auth6 <- auth6[-73, ] # partial response
 
-## demographics
-with(auth6, list(
-  length(age), summary(age), sd(age), 
-  prop.table(table(gender)), prop.table(table(ethnicity))
-))
+nrow(auth6)
+c(summary(auth6$age), sd(auth6$age))
+prop.table(table(auth6$gender))
+table(auth6$race)
 
-## manip check
-t_table(auth6, c("check_self", "check_norm"), "cond", FALSE)
+round(cor(auth6[, 21:28]), 2)
+psych::fa.parallel(auth6[, 21:28], fm = "pa")
+psych::fa.parallel(auth6[, 29:36], fm = "pa")
+psych::fa(cov(auth6[, 21:28]), nfactors = 2, fm = "pa", rotate = "oblimin")
+psych::fa(cov(auth6[, 29:36]), nfactors = 2, fm = "pa", rotate = "oblimin")
 
-## scale
-cor.test(~ dvs_1 + dvs_2, auth6)
-cor(auth6[, c("atts_1", "atts_2", "atts_3")])
-psych::fa(auth6[, c("atts_1", "atts_2", "atts_3")], nfactors = 1, fm = "pa")
+with(auth6, cor.test(neg_auth, neg_pc))
+with(auth6, cor.test(pos_auth, pos_pc))
+cor(auth6[, c("prej", "neg_auth", "neg_pc")])
 
-## primary hypothesis
-summary(lm(auth ~ prej * cond, auth6))
-summary(lm(auth ~ prej * relevel(cond, ref = "auth_good"), auth6))
+t.test(prej ~ cond, auth6)
 
-ggplot(auth6, aes(x = prej, y = auth, color = cond)) +
+mod1 <- lm(neg_auth ~ prej * cond, auth6)
+summary(mod1)
+summary(lm(neg_auth ~ prej * relevel(cond, "Suppression"), auth6))
+#plot(mod1)
+
+with(auth6, cor.test(neg_auth, prej))
+
+mod2 <- lm(neg_pc ~ prej * cond, auth6)
+summary(mod2)
+#plot(mod2)
+
+with(auth6, cor.test(neg_pc, prej))
+
+mod3 <- lm(pos_auth ~ prej * cond, auth6)
+summary(mod3)
+
+mod4 <- lm(pos_pc ~ prej * cond, auth6)
+summary(mod4)
+
+ggplot(auth6, aes(x = prej, y = neg_auth, color = cond)) +
   geom_jitter() +
-  geom_smooth(method = "lm", se = FALSE) + 
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_minimal() +
   labs(x = "Prejudice", y = "Perceived Authenticity") +
-  scale_color_discrete(name = "Authenticity is...", labels = c("Bad", "Good")) +
-  theme_light() +
-  theme(text = element_text(size = 16), legend.position = "top")
+  theme(text = element_text(size = 16), legend.position = "top",
+        legend.title = element_blank())
 
-## condition on authenticity and prejudice separately
-t_table(auth6, c("auth", "prej"), "cond")
+ggplot(auth6, aes(x = prej, y = neg_pc, color = cond)) +
+  geom_jitter() +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_minimal() +
+  labs(x = "Prejudice", y = "Perceived 'PC'") +
+  theme(text = element_text(size = 16), legend.position = "top",
+        legend.title = element_blank())
 
-## replicate previous findings that it is correlated?
-with(auth6, cor.test(auth, prej))
+ggplot(auth6, aes(x = prej, y = pos_auth, color = cond)) +
+  geom_jitter() +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_minimal() +
+  labs(x = "Prejudice", y = "Perceived Authenticity") +
+  theme(text = element_text(size = 16), legend.position = "top",
+        legend.title = element_blank())
 
-## primary hypothesis works when using the manipulation check
-## but p-value isn't really in the range you'd want after digging around in data
-summary(lm(auth ~ prej * check_norm, auth6))
-cor.test(as.numeric(auth6$cond) - 1, auth6$check_norm)
-
+ggplot(auth6, aes(x = prej, y = pos_pc, color = cond)) +
+  geom_jitter() +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_minimal() +
+  labs(x = "Prejudice", y = "Perceived 'PC'") +
+  theme(text = element_text(size = 16), legend.position = "top",
+        legend.title = element_blank())

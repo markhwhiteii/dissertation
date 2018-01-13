@@ -1,201 +1,212 @@
-expression_1_TEXT,expression_2_TEXT,expression_3_TEXT,expression_4_TEXT,expression_5_TEXT,expression_6_TEXT,expression_7_TEXT,expression_8_TEXT,expression_9_TEXT,expression_10_TEXT,suppression_1_TEXT,suppression_2_TEXT,suppression_3_TEXT,suppression_4_TEXT,suppression_5_TEXT,suppression_6_TEXT,suppression_7_TEXT,suppression_8_TEXT,suppression_9_TEXT,suppression_10_TEXT,authneg11,authneg12,authneg13,authneg14,rulesneg1,legitneg1,authneg21,authneg22,authneg23,authneg24,rulesneg2,legitneg2,authpos11,authpos12,authpos13,authpos14,rulespos1,legitpos1,authpos21,authpos22,authpos23,authpos24,rulespos2,legitpos2,age,gender,gender_TEXT,race,conserv,democrat,prej_1,prej_2,prej_3,prej_4,prej_5,prej_6,prej_7,prej_8,prej_9,prej_10,prej_11,prej_12,prej_13,cond
-,,,,,,,,,,food is too available,food is too cheap,exercise is too hard,there's not enough time to exercise in a day,food is too delicious,calories aren't easy to count,bodies want to store fat,asthma,video games are too fun,netflix is too fun,7,7,7,7,1,7,7,7,7,7,1,7,7,7,7,7,7,7,7,7,7,7,7,7,25,1,,white,2,6,7,4,7,4,7,4,7,7,7,7,7,7,7,Suppression
-,,,,,,,,,,poor eating habits,advertisers,people copy those around them,lack of exercise,too much sugar in diet,commercials,activities that are associated with eating (bday party),lack of nutritional knowledge,depression,lack of support,4,4,4,4,1,1,4,4,4,4,1,1,6,6,6,6,4,2,7,7,7,7,7,7,29,1,,white,1,7,1,4,1,4,1,1,1,1,1,1,7,4,3,Suppression
-Overeating,Not eating healthy foods,Lazy,Not exercising,Genetics,Not eating enough nutrition,,,,,,,,,,,,,,,2,2,3,2,2,2,6,6,6,7,7,7,6,6,6,6,6,7,5,5,6,5,5,5,32,1,,Black,6,4,1,6,1,1,1,1,2,2,2,1,7,2,4,Expression
-Genetics/particular biological reasons,Bad habits,Lack of self control,Inadequate access to medical care,Can't afford healthy food,Don't have time/make time to exercise,Can't exercise because of lack of mobility,,,,,,,,,,,,,,6,6,6,5,7,7,6,5,6,5,7,7,6,6,6,6,7,7,6,6,6,7,7,7,23,0,,Caucasian,3,3,2,4,2,2,2,3,3,3,4,4,4,4,2,Expression
-eat too much,metabolism,just the way it is,lack of exercise,family tradition,genes,bad eating habits,too much deserts,stressed,poor nutrition,,,,,,,,,,,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,6,6,6,6,6,6,64,1,,White,6,2,1,3,3,2,2,2,6,1,4,1,7,7,7,Expression
-,,,,,,,,,,Fast food is too readily available ,Portions are too large,People have bad metabolisms,Some people have diseases that cause it,There are hidden calories in many foods,Being overweight is normal,People are raised to eat too much,Commercials convince people to eat high fat food,Soda has many hidden calories,Sugar is in everything,7,7,7,7,1,7,7,7,7,7,1,7,4,4,4,4,7,4,5,5,4,4,7,5,35,1,,white,3,5,5,7,4,4,7,5,4,7,4,4,7,7,7,Suppression
-fat people eat too much,fat people may really really enjoy food,fat people are sad and eat a lot to feel happier,"fat people are covering themselves with a ""suit of armor"" because of past blows they may have suffered",fat people do not exercise enough,fat people may have a body structure that shows fat easily: e.g. short people show weight more quickly than tall people,fat people need to compensate for feelings of weakness,fat people may be unfamiliar with the principles of portion control,fat people may have some metabolic problem,fat people are unaware of the principles of dieting for weight loss,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,4,6,6,6,6,6,6,77,0,,"caucasian, USA, non-hispanic",1,7,1,2,1,1,1,1,1,2,5,2,5,3,4,Expression
-,,,,,,,,,,Metabolism,Diet,insufficient exercise,Too much sedentary work to do. ,Not enough time to burn calories,Low-calorie food is too expensive. ,gym membership is too expensive. ,Not enough places to exercise,Not enough money ,Not enough time,2,2,2,2,1,2,4,4,4,4,1,1,4,4,4,4,7,4,4,4,4,2,7,4,35,1,,White,2,4,1,4,1,1,1,1,1,1,1,1,4,2,2,Suppression
-,,,,,,,,,,over eat,genetics,depression,lazy,,,,,,,6,7,6,5,1,5,5,6,6,4,1,5,6,4,4,6,3,6,5,5,6,6,2,5,34,0,,white,6,2,3,3,3,6,5,6,6,5,6,3,4,5,4,Suppression
-,,,,,,,,,,how someone is raised to eat and exercise by environment or family,"very rarely, their genetics",,,,,,,,,6,6,6,5,1,5,6,6,6,6,1,6,5,5,5,2,1,2,6,6,6,6,5,6,28,1,,white,3,3,6,7,5,7,5,6,7,2,2,1,7,7,7,Suppression
-They eat too much,They don't exercise,Their diet is unhealthy,They have a disease,They have a food addiction,They are depressed,,,,,,,,,,,,,,,6,6,4,6,6,6,6,6,4,6,6,6,6,6,4,6,6,6,6,6,4,6,6,6,26,1,,Caucasian ,3,4,2,6,2,2,2,2,2,2,1,1,5,6,3,Expression
-,,,,,,,,,,grew up in poverty,never taught to make better choices,healthy food isn't available,medical condition,,,,,,,4,4,4,2,1,1,2,2,4,2,1,3,6,6,6,7,7,7,6,6,6,6,7,7,30,0,,white,1,7,1,1,1,1,1,2,1,6,3,2,5,3,2,Suppression
-overeating,choosing the wrong foods,too many processed foods,too much sugar,too many fried foods,too many convenience foods,not enough fiber,not enough water,not enough exercise,not enough sleep,,,,,,,,,,,5,4,5,4,4,4,5,5,5,4,4,4,3,4,4,4,4,4,5,5,4,4,4,4,51,0,,white/Caucasian,2,6,3,4,4,5,5,4,4,5,5,5,6,6,5,Expression
-,,,,,,,,,,Genetics,Lack of time to exercise,Lack of access to healthy foods,A job that keeps them sitting all day long,Weather outside prevents exercise,Could be sick in bed for long periods of time,,,,,7,7,7,7,1,1,7,7,7,7,1,1,7,7,7,7,7,7,7,7,7,7,7,7,37,1,,Caucasian,6,2,1,1,1,1,1,1,1,5,2,3,4,5,3,Suppression
-,,,,,,,,,,family,society,food companies ,themselves,,,,,,,2,3,2,6,2,2,2,2,3,1,1,2,4,4,5,4,2,7,2,1,2,3,1,2,21,1,,caucasian,5,6,3,3,2,2,1,2,6,2,3,7,2,7,1,Suppression
-They eat too much,They have genetic problems,They have a disorder,They don't exercise enough,,,,,,,,,,,,,,,,,7,6,6,5,6,5,5,6,4,3,6,5,5,7,6,4,5,5,5,6,5,6,4,5,27,1,,Caucasian,5,3,6,5,6,5,3,6,6,5,6,6,7,7,6,Expression
-,,,,,,,,,,Too poor to afford healthy food,Don't know how to eat healthier,Unable to exercise,Bad genetics,A disease,Too busy to fix healthy meals,Hormone imbalance,Stress,,,5,5,6,5,4,5,3,4,3,5,2,4,6,6,5,7,7,6,7,7,6,7,7,7,24,1,,Caucasian,5,3,1,7,2,1,1,1,2,1,3,1,5,7,4,Suppression
-,,,,,,,,,,more expensive to eat healthy,A medical condition,Something in their dna.,,,,,,,,6,6,6,6,2,4,6,6,6,6,2,4,6,6,6,6,7,6,6,6,6,6,7,7,36,0,,white,3,5,4,5,3,2,5,5,6,1,1,1,6,6,5,Suppression
-,,,,,,,,,,medical problems,,,,,,,,,,6,7,6,7,1,7,6,6,6,7,1,7,5,5,5,6,5,2,3,2,3,2,6,2,53,1,,white,5,4,6,7,6,6,7,7,7,7,7,7,7,7,7,Suppression
-Sow metabolism ,Lazy,Over indulges,Eats high calorie food,No exercise,Snacks often,Bad genes,Lacking nutritional information,Junk food,Ice cream,,,,,,,,,,,6,6,6,6,7,6,6,6,5,6,5,6,6,7,6,6,7,6,6,6,5,6,6,5,56,0,,White,3,5,2,6,2,3,2,3,5,6,4,5,5,6,4,Expression
-lazy,happy with way they are,don't care,don't want to bother,convenced them self they can't do it,loves to eat,likes the attention,knows everything,,,,,,,,,,,,,7,7,7,7,7,7,7,7,7,7,7,7,4,4,4,4,4,4,7,7,7,7,7,7,30,0,,white,5,5,1,5,1,1,2,1,2,5,7,7,7,7,7,Expression
-,,,,,,,,,,They are genetically predisposed to be obese.,They suffer from certain medical conditions which causes them to be obese.,They are unable to afford healthy and nutritious foods.,They grew up in an unhealthy environment where they never learned to eat properly.,They are unaware of what types of foods they should be consuming in order to lose and keep a healthy weight.,They sometimes live certain lifestyles which do not permit them to cook and consume healthy meals everyday.,,,,,2,3,3,3,1,1,2,3,3,3,1,1,5,5,5,5,7,7,6,6,6,6,7,7,31,1,,American,1,7,2,1,1,7,1,1,1,3,3,3,5,4,2,Suppression
-Some fat people are fat because they can't control themselves.,Some are fat because they weren't raised with being healthy in mind.,Some are fat because they have genetic problems.,Some are fat because they are simply just lazy.,Some are fat because they don't care at all.,Some people are fat because they don't exercise.,,,,,,,,,,,,,,,7,7,7,7,7,7,6,6,6,6,7,7,5,5,5,6,7,7,7,7,7,7,7,7,25,1,,White,2,2,1,5,1,1,1,1,2,5,5,6,7,6,5,Expression
-lack of self control,addiction,,,,,,,,,,,,,,,,,,,6,6,7,7,5,7,5,5,5,4,5,5,6,5,6,6,6,5,5,6,6,6,6,6,22,1,,black,1,7,1,2,1,1,2,1,1,1,1,1,5,3,1,Expression
-,,,,,,,,,,depression,lack of exercise,diet,medical issues,genetics,stress,busy,lack of nutrition education available,food deserts,pregnancy,5,5,5,3,1,4,5,5,5,3,1,4,6,6,6,6,7,7,5,5,5,5,6,7,30,0,,Caucasian,1,6,1,1,1,1,1,1,1,5,3,6,4,2,3,Suppression
-Overeating,Lack of exercise,Too much sugar in the diet,Genetically predisposed to be fat,Hormonal imbalance,Slow metabolism,Eating the wrong kinds of foods,Not eating healthy,Eating junk food,Not drinking enough water,,,,,,,,,,,5,5,5,6,7,5,6,6,6,6,7,7,6,6,6,6,7,7,6,6,6,6,7,7,33,0,,Caucasian,1,7,4,5,2,2,2,5,4,7,5,6,5,5,4,Expression
-Failure to exercise,Genes,Thyroid condition,Bad diet,,,,,,,,,,,,,,,,,3,2,4,4,6,5,4,5,4,6,4,3,4,5,3,5,3,4,3,4,5,4,5,3,34,0,,Asian,4,5,6,3,3,4,4,3,4,3,4,3,2,3,3,Expression
-They do not exercise frequently.,They may eat too much.,They may have a health problem.,They may enjoy to be fat.,They do not care about their body type.,,,,,,,,,,,,,,,,5,5,5,6,6,6,7,7,7,7,7,7,5,5,5,5,5,5,3,3,3,3,4,3,26,1,,White,3,5,2,3,3,2,3,3,3,5,5,4,6,5,4,Expression
-bad genes,genetically pre-disposed to store more fat,poor diet,low physical activity,poor lifestyle choices,depression,anxiety,have a medical condition,sedentary lifestyle,unable to eat appropriate portions (sizes) of food. ,,,,,,,,,,,6,6,6,6,6,6,4,4,4,5,5,5,6,6,6,6,6,5,6,5,6,6,6,2,36,0,,caucasian,7,1,7,1,1,7,7,5,7,1,5,1,7,7,7,Expression
-,,,,,,,,,,Their parents overfed them as children,They were never encouraged to exercise,They have a disability that makes them not understand healthy eating,They have low thyroid function,They have polycystic ovarian syndrome,They have a physical disability that makes exercise difficult,They have slow metabolisms,Processed foods have made them addicts,They are discouraged from losing weight by other people,"If they were a different size, their clothes wouldn't fit",6,6,6,6,2,6,7,7,7,7,1,6,4,4,3,4,7,3,5,5,5,5,7,5,30,1,,Hispanic,4,4,1,2,1,1,1,1,1,5,1,4,6,6,5,Suppression
-,,,,,,,,,,Calorie intake is too high.,Not enough exercise.,Unhealthy food is consumed.,Eating habits while growing up were bad.,Lack of self control.,Eating too much packaged foods.,Probably way too much pizza.,,,,6,6,6,6,6,6,6,6,6,6,4,4,6,6,6,6,6,6,6,6,6,6,6,6,72,1,,Caucasian,3,5,3,6,3,3,3,3,5,5,6,4,5,6,5,Suppression
-,,,,,,,,,,problems in childhood,problems in highschool,unhealthy relationship with food,bad relationship with parents,werent taught proper food lessons by parents ,depression,anxiety,thyroid issues,genetics,environmental problems ,3,3,4,4,3,2,2,2,2,2,2,1,5,5,5,6,6,6,7,7,7,7,7,7,21,0,,"caucasian, native american ",2,6,1,2,2,1,2,2,1,6,7,7,5,5,1,Suppression
-Lazy,Don't exercise,They don't eat healthy,Emotional eaters,Don't take care of their bodies,Thyroid problems,Metabolism issues,Too much fat in their diet,Too much sugar in their diet,Prescribed medicines that cause weight gain,,,,,,,,,,,7,7,4,6,6,6,7,7,7,7,7,7,7,7,6,7,7,7,1,1,4,4,1,1,48,0,,White,7,1,2,6,2,7,1,6,5,7,7,7,2,7,6,Expression
-,,,,,,,,,,Health issues ,Poverty ,Depression ,Lack of time to exercise ,Family problems ,Age ,Gender ,Friend issues ,Social pressure ,Anxiety ,7,6,7,7,3,6,6,7,6,6,1,7,7,7,6,6,7,6,7,6,6,6,6,7,30,0,,White ,2,6,4,6,3,2,2,5,5,6,7,5,6,6,5,Suppression
-oversized restaurant portions,huge plates becoming the norm,capitalism in general pushing products people don't need,too much sugar in literally everything,the change from an active to a sedentary society,"a culture of fear that make parents hypervigilant, not allowing kids to play and explore as they would have in the past",emotional issues,food addiction,eating disorders,lack of activity,,,,,,,,,,,5,5,5,6,6,3,6,6,6,6,6,3,6,6,6,6,6,4,6,6,6,6,6,5,25,0,,white,1,7,2,5,2,2,3,2,2,6,5,6,5,2,2,Expression
-,,,,,,,,,,The diet they keep.,The amount of exercise.,The amount of food they eat.,,,,,,,,4,4,4,4,4,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,26,0,,Arab,5,5,1,1,5,7,1,7,1,7,7,7,5,5,1,Suppression
-,,,,,,,,,,nervous eaters,depressed,genetics,were not raised to eat healthy,too few options,addiction to food,not enough exercise ,low metabolism,sedentary lifestyle,they eat when lonely ,4,4,5,4,1,4,5,4,4,5,1,4,5,5,6,5,5,5,6,5,5,5,6,5,33,1,,white,4,4,2,4,3,2,2,3,3,3,3,3,6,2,4,Suppression
-Because they have bad genetics,Because they have some kind of illness,Because of the medication they're taking,Because they don't like to exercise,Because they lack self-control,Because they love eating,Because they eat their feelings,,,,,,,,,,,,,,6,6,6,4,6,4,5,5,5,4,5,4,6,6,6,6,6,6,5,6,5,6,6,6,21,0,,White,1,7,3,3,2,2,3,4,2,5,6,6,5,4,2,Expression
-lazy,indulgent,sad,sick-medically,unhealthy,uneducated,,,,,,,,,,,,,,,6,6,6,6,6,5,6,6,7,6,6,6,6,6,6,6,6,4,7,7,7,6,7,7,22,0,,Caucasian ,4,4,1,5,2,1,1,1,1,4,3,5,6,6,4,Expression
-Eat too much,Drink too much,Don't exercise,Turn to food for emotional problems,genetic,health issue,love of food,lack of self-control,,,,,,,,,,,,,6,6,6,6,6,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,37,1,,white,3,4,4,6,3,2,2,2,3,3,2,2,6,6,5,Expression
-Because obesity runs in their family,Because they have no self control,Because they have low self esteem,They overeat to make themselves feel better about something wrong in their lives,They don't care about how they look or feel,They are lazy,They are gluttons,,,,,,,,,,,,,,5,5,4,4,6,4,6,6,4,5,6,5,6,6,4,6,6,6,6,6,4,6,6,6,52,0,,Caucasian,5,3,1,4,1,1,1,2,1,5,2,5,4,5,2,Expression
-,,,,,,,,,,Poor metabolism.,Various mental disorders.,The expense of healthier foods.,Overactive ghrelin response.,Underactive leptin response.,Addiction. (CART gets its name from cocaine and amphetamine for a reason.),Various hormonal / chemical signaling disorders.,Liver pathologies.,"Various inherited genetic factors, poorly understood as of yet.","Exploitative practices of food manufacturers - more sugar, more salt, more fat.",6,6,6,3,1,1,6,6,6,3,1,1,6,6,6,7,7,7,6,6,6,5,6,6,26,1,,White/Caucasian,1,7,1,1,1,1,1,1,1,3,2,2,5,1,1,Suppression
-,,,,,,,,,,depression,overeating,stress,diabetes,heart failure,hormone imbalance,lack of ability to exercise,Unknowledgeable,heridatary,self confident,5,5,5,5,2,2,6,6,6,6,1,5,6,6,6,6,6,6,6,6,6,6,6,6,35,0,,white,5,5,1,3,1,1,1,1,3,6,6,6,3,6,3,Suppression
-,,,,,,,,,,Genetic predisposition,Delicious high calorie food temptions,Bad peer influences,Overeating due to high stress environment,Lack of time to exercise,Lack of good coaching about weight management,Slow metabolism,Lack of healthy food options,Lack of facilities that encourage exercise,Obesity in childhood due to poor parenting,5,5,7,5,1,5,5,5,7,5,1,5,7,7,7,7,7,7,7,7,7,7,7,7,61,1,,Caucasian non Hispanic,5,3,1,2,1,2,1,1,5,5,7,7,7,7,2,Suppression
-like to eat,genetically predisposed,don't exercise enough,don't have enough self control,too short,,,,,,,,,,,,,,,,6,6,6,6,7,4,6,6,6,6,7,7,6,6,6,6,7,5,6,6,6,6,7,6,41,0,,white,7,1,2,4,4,2,4,2,5,3,2,4,6,6,6,Expression
-hereditary,health problems,over eating,lazy,thyroid problems,medication,diet,to please others,lack of exercise,metabolism,,,,,,,,,,,7,7,7,7,7,7,5,5,5,7,7,7,7,7,7,7,7,7,4,4,4,5,7,6,48,0,,white,7,1,1,2,1,7,1,1,1,2,5,2,4,6,1,Expression
-,,,,,,,,,,Lack of exercise,Unhealthy eating habits,Slow metabolism,Medication effect,Illness,Sedentary lifestyle,Genetics,,,,6,6,6,4,1,2,6,6,6,4,1,2,5,5,5,5,5,6,5,5,5,5,5,5,44,0,,White,2,6,2,3,1,1,1,3,2,5,4,4,5,4,2,Suppression
-They  don't  know any better ,They eat too much,they have medical problems,they are genetically  predisposed to overweight ,They  don't  exercise enough,"Improper eating habits,",too much TV.,bad sleep  habits,,,,,,,,,,,,,4,5,4,5,6,6,5,4,5,5,7,6,5,5,6,6,7,5,6,5,6,5,6,6,50,1,,caucasian ,4,4,3,3,2,2,4,3,4,5,5,3,5,2,2,Expression
-eat too much,lazy,sick,never exercise,depressed,always have been and know no other way,dont know how to eat properly,they want to be fat,eating disorder,medication,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,5,6,6,6,6,6,6,49,0,,caucasian,2,4,1,1,1,1,2,6,5,7,7,7,6,6,5,Expression
-lack of nutrition,lack of self control,bad genetics,poor eating habits,lazy,,,,,,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,7,7,29,1,,white/caucasian,1,5,3,7,3,1,3,5,3,5,5,1,7,5,4,Expression
-,,,,,,,,,,"the food that is affordable can be high in calories, and they cannot afford heathier foods",they have to work so much that they have no time for exercise,they have to work so much that they have no time for healthier foods,some people are genetically predisposed to being overweight,some people have a great deal of stress and they overeat,some people have medical illnesses such as depression and they overeat,some people have to take medication that makes them experience weight gain,some people have gained weight from pregnancy and cannot get rid of it,people burn calories differently and some people cannot burn them as easily,food labelling can be deceptive and mislead people into thinking the food is healthy when it is not,6,6,6,6,1,2,6,6,6,6,1,2,6,6,6,6,6,6,6,6,6,6,6,6,51,0,,white,1,6,2,5,3,2,2,3,2,3,5,3,5,3,3,Suppression
-,,,,,,,,,,They have a genetic disposition ,They enjoy the taste of food,They are depressed,They have addictive personalities,They find comfort in food,They are bored,They are lonely,They are not well informed on healthy nutrition,They have a slow metabolism ,They are a plus size model,5,5,5,5,5,5,5,5,5,5,1,1,7,7,7,7,7,7,7,7,7,7,7,7,28,1,,white,2,6,1,7,1,7,1,1,1,1,1,1,7,5,3,Suppression
-genetics,disease,environmental factors,depression,laziness,no time for exercise,like to eat,,,,,,,,,,,,,,6,6,6,6,6,7,6,6,6,6,6,7,6,6,6,6,6,7,6,6,6,6,6,7,46,0,,Caucasian,5,3,4,5,3,2,3,3,2,7,7,7,5,6,3,Expression
-Lazy,Bad diet,Stress eat,Bad genes,Family Issues,Poor self esteem,They don't care,They refuse to work out,They eat junk food,Bad self image,,,,,,,,,,,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,32,1,,White,6,6,3,4,3,3,4,4,5,5,6,5,6,7,6,Expression
-They overeat.,They don't exercise.,They are physically disabled.,They have a medical condition.,They have to take a medication that affects their weight.,,,,,,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,43,0,,caucasian,6,2,2,5,2,2,2,2,2,4,3,5,4,5,4,Expression
-,,,,,,,,,,Genetics.,Inability to go to a gym.,No access to healthy food.,No education on health and wellness.,Depression.,Certain medications that cause weight gain.,Symptoms of a medical condition.,Food addiction.,Hormonal.,Injury preventing physical activity.,6,6,6,6,3,4,6,6,6,6,2,4,6,6,6,6,6,6,6,6,6,6,6,6,34,0,,White,1,7,2,3,1,1,1,2,1,5,2,3,5,4,4,Suppression
-They eat too much.,Their diet consists of a lot of sugar and fats.,They don't get much exercise.,They have a hormonal imbalance. ,They have a sedentary or no job. ,They spend too much time in front of an xbox or computer. ,They can't afford to purchase healthy food. ,They eat fast food too often.,They have a slow metabolism.,They were raised to consume more food than necessary.,,,,,,,,,,,6,6,6,6,7,5,5,6,6,6,6,5,6,6,7,7,7,7,7,7,7,7,7,6,51,0,,"White, Caucasian",5,3,2,2,2,2,2,2,2,5,5,5,5,5,4,Expression
-,,,,,,,,,,STRESS,DEPRESSION,DIABETES,THYROID PROBLEM,GENETICS,INJURY AND CAN'T EXERCISE ,ASTHMA,LOW SELF ESTEEM,LAZY,ON MEDICATION THAT CAUSES WEIGHT GAIN ,2,2,5,5,3,3,5,5,5,5,5,5,7,6,7,6,6,6,6,6,7,6,7,6,34,0,,WHITE,3,4,1,1,2,1,1,2,1,6,6,7,1,6,3,Suppression
-,,,,,,,,,,Medical reason,Work and school foods,Certain Medicines,Fried Foods,Chemical additives in foods,Fast food places,Sugary drinks,Processed Foods,Bakery Items,Too much added sugar and fat in grocery food,5,5,5,4,3,3,5,5,5,4,3,3,3,4,4,4,4,4,5,4,4,4,5,5,63,0,,White,6,2,1,2,2,1,2,2,2,2,3,2,6,4,4,Suppression
-they eat too much,they dont burn off enough calories,they are lazy,they have a disease,they eat unhealthy food,,,,,,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,5,6,6,6,6,6,6,27,0,,white,2,6,5,5,3,3,3,3,3,6,5,5,5,5,3,Expression
-,,,,,,,,,, , , , , , , , , , ,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,1,1,55,0,,white,1,7,1,1,1,1,1,1,1,3,1,1,1,1,1,Suppression
-,,,,,,,,,,Eating too much food,Eating too much sugar,Not exercising,Sitting down,Drinking too much soda,,,,,,1,1,1,1,1,1,1,1,1,1,1,1,6,6,6,6,6,6,1,1,1,1,1,1,27,1,,white,4,4,1,4,1,1,1,1,1,6,7,7,6,2,1,Suppression
-GENETICS,LAZINESS,UNEDUCATED ABOUT HEALTH,POOR,LITTLE ACCESS TO HEALTHY FOOD,,,,,,,,,,,,,,,,6,6,4,6,6,6,6,6,4,6,6,6,6,6,4,6,6,6,6,6,4,6,6,6,28,1,,CAUCASIAN,2,6,1,3,2,5,2,2,6,6,7,4,6,6,5,Expression
-,,,,,,,,,,Genetics,,,,,,,,,,7,7,7,7,1,2,7,7,7,7,1,2,5,5,5,5,7,7,7,7,7,7,5,5,28,1,,White/Caucasian,4,4,5,6,6,5,5,5,4,4,4,1,7,7,6,Suppression
-once some people gain weight it is a struggle to keep it off so they give up,some people are depressed and just not able to lose the weight ,food addiction and not being able to control it and eating when being stressed out.,some people are biologically prone to it and it can be very difficult to lose the weight without medical intervention,"some people grew up with a family that showed love through food and eat all the time, even when they are not hungry.",some people just do not accept that being overweight/fat is unhealthy and they feel good.,some people are just greedy and enjoy food so much they indulge all the time,some people are not educated on nutrition and eat and cook the wrong things,some people are unable to shop locally for healthy foods and eat processed high fat foods,some people just like being overweight and like the attention it gives them,,,,,,,,,,,3,2,2,7,7,5,5,4,5,5,7,3,7,7,7,7,7,7,7,7,7,7,7,7,53,1,,White,4,4,1,1,1,1,1,1,1,2,5,1,5,2,2,Expression
-Their metabolism is naturally slow,They eat too much in general,They eat too much sugary food,They do not exercise,They do not do aerobic exercise,They are depressed,They do not get enough sleep,,,,,,,,,,,,,,6,7,7,7,7,6,6,6,6,7,7,7,6,6,7,7,7,7,5,5,6,6,7,7,40,0,,white,2,7,1,1,1,1,2,5,1,7,3,6,7,6,6,Expression
-They lack self control.,They have a hormone problem.,They have a lot of stress.,They want to satisfy another desire and replace it by over eating.,They enjoy eating.,They don't know when to stop eating.,They don't exercise much.,They don't burn off fat or calories quickly.,They eat too much sugar or high calorie foods.,They eat out too often.,,,,,,,,,,,6,6,7,7,7,6,7,6,6,7,7,7,6,6,7,6,7,5,3,3,3,2,6,3,48,1,,White/Hispanic,4,4,1,2,2,1,1,2,2,3,2,3,7,6,3,Expression
-,,,,,,,,,,genetics,injury,carbohydrates,excessive eating,caffiene,fast food,grease,television,climate,cravings,6,6,6,5,1,5,6,6,6,6,1,7,6,6,6,6,7,7,6,6,6,6,6,5,47,1,,white,2,5,1,3,2,1,1,2,1,3,1,3,6,2,5,Suppression
-,,,,,,,,,,Genetics are a big reason why people are fat.,,,,,,,,,,1,1,1,4,1,1,4,4,4,1,1,1,5,4,4,5,6,6,6,6,6,6,6,6,28,0,,Asian American,4,4,2,2,1,1,2,5,2,5,6,7,4,4,1,Suppression
-they eat too much,they don't exercise,genetics,laziness,health problems,,,,,,,,,,,,,,,,6,6,6,6,6,6,6,6,5,6,6,6,6,6,6,6,6,6,6,6,4,6,6,6,33,0,,White,2,6,5,3,2,2,6,6,6,7,3,7,7,5,3,Expression
-they eat too much,they don't exercise,they are lazy,they lack self dicipline,they have some sort of metabolism problem,they are addicted to sugar,they eat for emotional reasons,they think fat is sexy,they eat the wrong things,they eat when they aren't even hungry,,,,,,,,,,,6,5,4,6,7,6,6,5,5,7,7,6,5,5,6,6,6,5,5,4,4,5,5,6,56,0,,white,1,6,3,5,2,3,3,3,5,5,3,5,6,6,5,Expression
-they have no self-control,their metabolism,they're big-boned,fat sticks to them,they don't exercise,their parents were fat,they eat junk food,they're gluttons,it's in their dna,they can't help it,,,,,,,,,,,4,4,4,4,7,4,5,5,5,4,7,5,5,5,5,5,7,5,5,5,5,5,7,6,45,1,,White,1,6,2,3,2,2,2,2,2,6,5,6,4,2,2,Expression
-,,,,,,,,,,Genetic,Learned from family,Learned from friends,Learn from TV,Depression,Anxiety,Boredom,Cultural,Too much food in the area,Stress,6,6,6,6,2,6,6,6,6,6,2,6,6,6,6,6,6,6,6,6,6,6,2,6,40,1,,Asian,3,5,5,5,5,5,5,5,5,5,5,5,5,5,5,Suppression
-,,,,,,,,,,hormonal imbalance,depression,genes,lack of sleep,,,,,,,5,5,5,5,1,5,5,5,5,5,1,7,6,6,6,6,7,7,6,6,6,6,7,6,20,1,,Asian / Hispanic,4,4,5,5,5,5,3,5,6,1,1,2,6,5,5,Suppression
-,,,,,,,,,,Societal pressures to eat,Bad Genetics,Prevalence of fatty foods in society,Lack of proper nutritional information,Expense of healthy foods,,,,,,6,6,6,6,1,6,6,6,6,6,2,6,6,6,6,6,6,6,5,5,5,5,6,5,28,1,,White,4,4,2,3,2,2,2,3,1,2,1,2,5,5,3,Suppression
-Genetics,Depression,Anxiety,Laziness,Physical disability,Diet,Culture,,,,,,,,,,,,,,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,35,1,,White,1,7,2,3,2,4,2,2,2,5,4,4,4,5,4,Expression
-,,,,,,,,,,hereditary,genetics,body type variance,,,,,,,,5,5,5,5,1,1,5,5,5,5,1,1,6,6,6,6,6,6,5,5,5,5,1,1,43,0,,White/non hispanic,4,5,1,1,1,7,1,1,1,1,1,1,4,1,1,Suppression
-medical condition that prevents exercise,poor diet,laziness,metabolism issue,,,,,,,,,,,,,,,,,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,53,1,,Caucasian,6,1,4,4,3,2,3,5,4,6,7,6,6,7,5,Expression
-overeating,lazy,limited or no walking on a regular basis,only get around by driving,lack of exercise,health problems,genetics,,,,,,,,,,,,,,5,5,6,6,5,5,7,7,7,7,7,7,5,5,5,6,7,6,7,7,7,6,6,5,29,0,,Caucasian,2,5,6,7,6,5,6,5,5,5,5,4,6,5,6,Expression
-bad eating habits,lack of exercise,health problems like thyroid issues,genetic propensity,lack of access to healthy food,eating disorder,medicine influence on wait gain,,,,,,,,,,,,,,5,6,5,5,6,6,5,5,5,5,6,5,6,6,6,6,6,6,5,5,5,6,6,5,30,0,,hispanic,3,6,2,3,3,2,2,3,2,5,5,5,5,4,2,Expression
-,,,,,,,,,,They have slow metabolisms,They have a genetic predisposition to be fat,They were raised by parents with unhealthy eating habits,They are physically unable to exercise more,Restaurants tend to serve high-caloric food,Their job prevents them from exercising more,The government food pyramid led them to an unhealthy diet,Food companies market high sugar foods as healthy,Their family enables an unhealthy lifestyle,The cost of diet food and gyms is too expensive,6,6,6,6,1,5,6,6,6,6,1,5,6,6,6,6,7,6,6,6,6,6,7,6,36,1,,Caucasian,2,6,2,3,2,2,2,3,2,5,5,5,4,3,3,Suppression
-Lazy to prepare healthy meals,They don't exercise,They are depressed,Metabolic disorder/thyroid problem,No self-control,Genetic influences,Stress,,,,,,,,,,,,,,7,7,7,7,7,6,7,7,7,7,7,7,5,6,6,7,7,7,6,6,6,5,7,5,44,0,,Asian American,6,1,4,5,4,3,3,5,4,6,7,6,6,6,5,Expression
-genetics,lazy,can't control food portion,depression,,,,,,,,,,,,,,,,,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,37,0,,white,1,4,1,3,1,1,1,1,1,5,5,5,6,6,5,Expression
-,,,,,,,,,,Genetics,Health conditions,,,,,,,,,7,7,6,5,1,7,7,7,7,6,1,7,6,7,6,7,6,5,6,7,6,7,6,6,23,0,,White,1,7,7,7,7,7,1,7,7,1,1,1,7,7,7,Suppression
-depressed,poor diet,poor genetics,lazy,uneducated,poor,lack motivation,injured,poor choices,poor self esteem,,,,,,,,,,,6,6,6,6,6,6,5,5,5,5,6,5,5,5,5,6,6,6,7,7,7,7,7,7,33,1,,white,4,4,1,5,3,1,2,2,2,3,2,2,5,4,4,Expression
-,,,,,,,,,,Genetics,,,,,,,,,,5,5,5,5,2,5,5,5,5,5,2,5,5,5,5,5,5,5,6,6,6,6,6,6,28,0,,White,3,6,2,5,3,2,2,5,5,3,3,5,5,7,5,Suppression
-Because they eat too much,Because they are lazy,They drink too much sugar based drinks,They do not get enough exercise,They eat too much junk food,They are on a very poor diet,They are not happy with themselves,They are depressed ,The do not drink enough water,They are on a bad diet,,,,,,,,,,,6,7,5,7,6,6,7,6,7,6,7,7,4,5,6,5,7,3,4,3,3,6,7,2,26,1,,Hispanic,3,6,2,6,2,4,3,5,2,5,2,3,6,6,6,Expression
-,,,,,,,,,,genetics,fast food,advertising,school,convenience stores,parents ,friends,relatives,tv,radio,5,5,5,5,1,5,5,5,5,5,1,5,7,7,7,7,7,7,6,6,6,6,7,6,53,1,,Caucasian,5,3,1,3,1,1,1,1,2,2,3,3,6,4,4,Suppression
-It is because of their genes.,They grew up fat.,It is because of their lifestyle.,They are old and they do not exercise.,They have no control over what they eat.,Lack of education about healthy living.,They are fat because they are sick.,Too much stress and too much work makes them fat.,,,,,,,,,,,,,6,7,7,7,6,6,7,7,7,6,6,6,5,6,5,5,5,6,6,5,6,6,6,6,47,0,,Asian,3,5,5,5,4,4,4,5,3,5,6,7,6,6,5,Expression
-genes,diet,trauma,mental disorder,loves to eat,food addcit,,,,,,,,,,,,,,,5,6,6,5,6,6,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5,5,6,22,0,,white,4,4,2,6,2,2,2,2,2,2,2,2,2,2,2,Expression
-eat too much,genetics,hidden chemicals in food,lack of exercise,,,,,,,,,,,,,,,,,5,5,5,5,5,3,5,5,6,5,5,6,6,7,6,6,6,7,4,4,5,5,5,4,35,1,,white,4,4,1,5,1,1,1,1,2,5,4,3,5,6,4,Expression
-,,,,,,,,,,They have a medical issue.,It is genetic.,,,,,,,,,5,5,4,6,2,4,5,4,4,6,2,4,6,6,6,6,6,6,6,6,6,6,6,6,37,0,,White,7,1,1,2,2,2,2,2,2,6,6,6,6,5,5,Suppression
-,,,,,,,,,,Genetics,Mentally challenged,Depressed,Lonely,Bored,Physically challenged,Just had a baby,Poor,Sick,Anxious,6,6,3,5,3,3,4,4,2,4,1,1,6,6,6,6,6,6,6,6,6,6,6,6,52,0,,white,6,1,2,6,2,3,2,2,3,5,6,6,6,4,4,Suppression
-Genetically disposed,Over eating disorder,Self control issues,Poor self confidence,Lazy towards health and fitness,Like the taste of fatty food,Simply don't care,Poor understanding of portion control,Over eating while pregnant,Don't consider healthy alternatives,,,,,,,,,,,6,6,5,7,7,7,7,7,7,7,7,7,6,7,6,7,7,7,5,6,7,7,6,5,36,1,,Caucasion,1,7,1,6,1,1,1,3,3,3,2,1,6,6,2,Expression
-,,,,,,,,,,low mitabolism ,poor diet,lack of exercise,eating when depressed,love of eating,inherited genes,drug use (prescription or not),stress eating,medical condition,limited food options (forced to eat certain foods),7,7,7,7,1,3,7,7,7,7,1,7,7,7,7,7,7,7,7,7,7,7,2,5,33,1,,asian/white/pacific islander,1,5,1,5,1,1,1,1,1,1,1,1,6,5,2,Suppression
-genetics,eat too much,don't exercise,lazy,illness,lonliness,low self esteem,,,,,,,,,,,,,,4,4,4,5,6,5,5,5,5,5,5,5,5,5,5,5,5,4,4,4,4,5,5,4,50,0,,white/American,5,3,4,3,1,1,1,1,1,2,1,2,5,3,3,Expression
-Because they sit on the couch all day,go out to eat too much,or they have a health problem,may have a psychological problem,depression,some over weight people can be very mean and rude and some extremely nice never in the middle.,,,,,,,,,,,,,,,5,5,5,6,7,6,5,5,5,5,5,5,5,5,5,5,5,7,3,3,3,3,1,1,22,1,,white,3,5,2,1,2,3,2,2,3,3,5,5,5,6,4,Expression
-Eat a lot,They do not exercise,,,,,,,,,,,,,,,,,,,6,6,6,6,6,6,4,4,4,4,4,4,6,6,6,7,7,7,6,6,7,6,7,7,23,0,,hispanic,7,7,4,4,4,4,4,4,4,4,4,4,4,4,4,Expression
-,,,,,,,,,,abuse,neglect,boredom,bad food is cheap,no time for fresh foods,bad foods taste better,someone else prepares meals,disability,no time to exercise,no will to exercise,6,6,6,6,4,5,6,6,6,6,2,6,6,6,6,6,6,6,6,6,6,6,6,6,31,1,,white,2,6,2,3,2,1,3,3,5,4,6,4,5,5,4,Suppression
-genetics,won't stick with a workout plan,indulge in unhealthy foods,,,,,,,,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,4,6,6,6,6,6,5,26,0,,biracial,7,3,1,4,2,1,2,1,1,2,5,5,6,6,5,Expression
-,,,,,,,,,,Thyroid issue ,,,,,,,,,,1,1,2,1,1,,1,1,2,1,1,2,1,1,1,2,1,1,6,6,6,6,6,6,44,0,,White,2,6,1,2,1,1,1,1,1,6,1,1,1,2,1,Suppression
-Emotional issues leading to binge eating,"Health problems (thyroid issues, PCOS, diabetes, etc)",Lack of willpower ,Ignorance about proper nutrition,Laziness,,,,,,,,,,,,,,,,7,7,7,7,7,4,7,7,7,6,6,5,3,4,4,4,6,5,7,7,7,7,6,5,30,0,,White,6,2,2,1,1,2,1,6,5,5,5,3,3,6,6,Expression
-,,,,,,,,,,Because they eat food that others have made too high in calories,Because they eat more often than necessary due to conditions caused by others,Because they don't burn enough calories due to not having the necessary information,Because they are genetically predisposed to being fat,Because they can't afford to buy healthy food at the high prices set by others,,,,,,6,6,6,7,3,7,6,6,6,7,3,7,5,5,5,6,7,7,6,6,6,7,7,7,36,1,,Asian,2,6,3,6,2,3,3,4,3,5,4,5,7,7,5,Suppression
-low self esteem,negative self image,family history,culturally significant (some cultures accept obesity as part of their society),traumatic event,battling depression,do not have access to healthy food,don't really care,medical issues,do not have resources for healthy living,,,,,,,,,,,5,5,5,5,6,4,5,5,5,5,6,5,5,5,5,5,6,5,5,5,5,5,6,6,52,0,,white,4,4,3,3,3,4,3,3,4,5,6,4,5,3,3,Expression
-They eat too much.,They are born with a disorder,It is a side-effect from taking medication,They are not exercising,It is gene-inherited,,,,,,,,,,,,,,,,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,30,1,,Asian American,2,5,4,5,3,3,3,5,5,3,5,2,5,5,5,Expression
-they love food,their parents fed them unhealthy foods ,nobody instilled the importance of exercise in them,salty and sugary foods activate pleasure receptors in their brain,they don't understand the implications of an unhealthy diet,they eat because of boredom or sadness,they have a medical issue such as hypothyroidism,they have mobility issues,fast food and restaurants serve unhealthy portions of food ,they eat because they are happy and don't care about being fat,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,24,0,,White,2,2,1,2,1,1,1,1,2,2,3,2,4,5,5,Expression
-Eat too much ,Genetics ,Family ,,,,,,,,,,,,,,,,,,6,3,4,3,5,4,5,4,4,3,4,4,5,5,4,3,5,4,5,5,3,3,4,5,30,1,,White,4,4,4,4,3,4,3,4,6,5,4,3,5,5,3,Expression
-,,,,,,,,,,Affordable food is fattening.,Healthy food is expensive.,Depression causes weight gain.,,,,,,,,4,4,4,4,1,1,2,2,2,4,1,1,5,5,5,5,6,6,6,6,6,5,6,6,57,1,,white,6,6,1,2,1,7,1,1,7,7,7,7,5,5,5,Suppression
-,,,,,,,,,,They may have a glandular issu,It may be genetic,they may have an eating disorder,They might have diabetes,They might have a stunted metabolism.,Perhaps it is normal for their relative cultural group.,They may not have the best of diets.,They may not have enough exercise in the daily life.,They might have developed bad habits over the years.,They may be taking medication that increases body growth.,4,4,4,3,4,4,4,4,4,4,4,4,5,4,4,4,4,4,4,4,4,5,4,4,21,1,,Hispanic,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,Suppression
-eat too much,exercise too little,eat wrong foods,sleep too much,don't take care of themselves,bowel disesase,medications,fear of sinking,swallow a lot of air,bored so eat too often,,,,,,,,,,,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,6,7,7,7,7,6,6,42,1,,white,3,5,5,5,5,4,4,5,3,6,6,6,7,5,7,Expression
-,,,,,,,,,,Emotional eaters,Low metabolism ,Genetics,Pcos,Diabetes ,No time to exercise,No access to nutritionists,Trama in life,Depression ,Pregnancy ,5,5,5,5,4,5,3,3,4,3,2,5,6,6,6,6,6,6,4,4,4,4,3,4,23,0,,Hispanic ,2,7,1,4,4,1,1,1,1,2,2,2,5,5,2,Suppression
-They consume large amounts of unhealthy/fatty foods ,They are lazy,They do not exercise,They have genetic propensity for obesity.,They are bored/depressed.,They live a sedentary lifestyle.,They think it is an attractive look,Culture/Familial norms,Poor discipline and dietary habits,Sugar addiction,,,,,,,,,,,5,5,5,6,6,7,6,6,6,6,6,7,5,5,5,6,6,6,6,6,6,6,6,5,36,0,,White,6,1,5,4,5,5,5,5,6,5,5,6,7,6,7,Expression
-,,,,,,,,,,Illness,Lesser exercise or never do exercise,Stress,Medications effect,Overeating,,,,,,5,3,5,5,5,5,6,3,6,5,3,3,6,5,5,6,5,5,3,3,3,4,3,3,40,0,,Asian American,4,4,2,6,2,4,2,2,3,3,5,3,5,3,3,Suppression
-,,,,,,,,,,eating too much,thyroiud problem,too much stress,,,,,,,,3,3,3,1,5,3,2,3,2,5,2,3,3,5,3,2,3,5,3,2,4,3,2,4,37,1,,black,4,5,4,2,3,5,3,4,4,5,4,5,4,5,5,Suppression
-overeating,lazy,non active lifestyle,genetics,substance abuse,alcoholism,lack of sleep,lack of exercise,unintelligent,stupid,,,,,,,,,,,4,3,3,4,3,4,5,4,4,4,4,4,4,5,5,5,5,5,5,6,5,5,5,6,27,1,,American,2,2,4,3,6,3,3,4,5,5,6,6,5,4,4,Expression
-compulsive eaters,sedantary lifestyle,medical problems,,,,,,,,,,,,,,,,,,5,5,5,5,6,6,5,5,5,5,6,6,5,5,5,5,6,5,5,5,5,5,6,6,60,1,,white,4,5,2,5,1,1,2,2,4,5,4,4,5,5,5,Expression
-they eat too much,they are depressed,poor metabolism,they eat too many fattening foods,they comfort themselves with food,genetics,they don't exercise,they eat more calories than they burn,unable to exercise due to other health issues,influenced by others to eat more than they should,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,67,1,,white,7,1,2,4,2,1,2,1,4,5,6,3,7,6,6,Expression
-Sedentary lifestyle,Laziness,Hormone imbalance,Overeating,Drinking too much soda,Eating fast food,Watching too much TV,Not exercising,Unheathly relationship with food,Lack of self respect,,,,,,,,,,,6,6,6,6,7,6,6,6,5,6,7,6,5,6,6,6,7,5,6,6,6,6,7,6,38,1,,White,6,4,4,3,5,4,5,5,6,4,5,5,6,5,5,Expression
-,,,,,,,,,,genetics,access to good foods,poor nutrition education,addiction,poverty,,,,,,4,4,4,4,2,3,4,4,4,3,1,2,6,6,6,6,6,6,6,6,6,6,6,6,33,0,,caucasian,1,7,1,1,1,1,1,1,1,5,2,3,1,4,1,Suppression
-,,,,,,,,,,genetics,healthy food is not available,healthy food is not affordable,high stress causing comfort eating,peer pressure from friends to eat a certain way,peer pressure from family to eat a certain way,no time to cook healthy food,no refridgerator/freezer to store healthy food,no time to exercise,slower metabolism,4,4,5,4,4,5,2,2,4,4,1,1,5,5,5,5,7,7,6,6,6,6,7,5,38,0,,asian,3,5,3,4,1,1,1,1,2,1,3,4,7,4,4,Suppression
-Lazy,Like Food,Lack of Self Control,Don't exercise,Have a job where they sit all day,Stress,Poor Sleep,,,,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5,7,5,3,3,3,4,5,5,25,1,,White,6,2,4,5,6,4,6,5,4,5,4,4,6,6,4,Expression
-,,,,,,,,,,prepared foods have artificial ingredients,metabolic,hereditary,illness,too much hidden sugar in prepared foods,genetics,,,,,6,6,6,7,1,6,6,7,6,6,1,5,7,7,7,7,6,6,6,6,6,7,7,2,33,0,,asian,1,6,1,1,1,1,1,1,1,6,7,7,3,6,1,Suppression
-,,,,,,,,,,Thyroid condition,Slow metabolism,Eating disorder,Excessive messaging in media,High calorie meals made by restaurants,Not enough time in day to make healthy meals,Too tired after work to make healthy meals,Genetic condition,,,6,6,6,6,4,5,7,7,7,7,1,7,6,6,4,6,6,4,7,7,7,7,7,2,35,1,,white/american,2,5,1,2,2,1,1,1,2,6,6,7,7,5,4,Suppression
-culture of immobility ,prevalence High fat/sugar foods ,sedentary lifestyles ,lazyness ,lack of time and focus to remain thin ,economic prosperity ,avaibility of processed foods vs more natural diets ,to much free time ,hedonistic society ,lack of exercise ,,,,,,,,,,,5,5,3,3,6,5,5,3,3,5,5,5,4,4,3,4,6,6,5,5,5,6,6,6,42,1,,white ,2,7,3,2,2,3,3,5,5,5,2,5,3,4,4,Expression
-They don't eat right.,They don't excercise.,They like being fat. ,They were fat as a kid and it carried over to adulthood.,,,,,,,,,,,,,,,,,6,7,7,7,7,7,7,6,7,7,5,6,7,7,7,7,7,7,4,5,3,6,6,4,25,1,,White,4,4,4,6,2,3,4,5,4,4,4,2,5,5,5,Expression
-,,,,,,,,,,not enough nutritional information,too little time to exercise,too large of portions,dietary guidelines are poor,,,,,,,4,4,4,5,1,5,4,4,4,4,1,4,4,4,4,4,7,4,4,4,4,5,7,5,35,1,,white,4,4,1,1,4,1,4,1,4,5,5,5,7,6,5,Suppression
-lack of self control,they eat whatever they want because they don't care,too much sugar,too much soda,too many fried foods,inherited fat genes,eat too much,don't exercise,low metabolism,malfunctioning thyroid,,,,,,,,,,,7,7,7,7,7,7,7,7,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,45,0,,white,2,6,1,2,1,1,1,1,2,6,5,5,5,7,5,Expression
-,,,,,,,,,,medical condition,inherited fat genes,lack of sleep,poor metabolism,sedentary job,side effect of medication,poverty,hormones,bacteria in the intestine,greater availability of food,5,5,5,5,1,5,5,5,5,5,1,5,5,5,5,6,7,7,6,6,6,6,7,6,65,1,,white,7,1,1,3,2,1,2,1,1,5,5,5,5,5,5,Suppression
-Because they love food to much,they like to eat alot,medical condition ,,,,,,,,,,,,,,,,,,2,4,4,5,5,4,4,3,5,5,4,4,2,5,5,5,5,5,4,6,6,6,6,6,31,1,,latino,2,6,2,3,1,2,2,2,2,6,6,5,6,2,2,Expression
-They eat too much,They eat the wrong types of food,"They go back and forth between eating only salads and junk food, instead of having a good balance.",Not enough exercise,Depression makes them eat more and exercise less,"Too discouraged about their weight, so they eat even more.",Eat to feel not so lonely,Just really love food,Genetics,Not really understanding how calories work.,,,,,,,,,,,7,7,7,7,7,6,7,7,7,7,7,6,5,5,5,7,7,6,6,6,6,7,7,6,27,0,,Middle Eastern,2,6,2,7,1,1,1,5,1,2,7,3,7,6,5,Expression
-,,,,,,,,,,genetics,access to poor quality food,disability,physical problems that cause lack of exercise,working overnight shifts,no time to exercise  ,thyroid problems,slow metabolism ,disease,depression,3,2,2,2,1,1,4,4,5,3,1,3,6,6,7,6,7,7,6,6,5,6,7,6,45,0,,white,2,6,1,1,1,1,1,1,1,5,3,4,2,2,1,Suppression
-,,,,,,,,,,too much sugar in food overall,food companies selling crappy food,government insisting that people eat way too much sugar,society blames them and that makes it hard to to work out,people mocking them makes it harder to be taken seriously,"too much fat replaced with sugar (no-fat, low-fat)",society's shift to sedentary lifestyles,cost of meat going up,people being told that sugar filled fruit is the 'healthy' option,doctors not taking over weight patience seriously,6,6,7,1,1,1,6,6,7,1,1,1,6,6,6,7,7,7,7,7,7,7,7,7,31,0,,white,4,4,2,2,1,1,1,1,1,5,7,7,2,5,1,Suppression
-,,,,,,,,,,eat too much,exercise too little,inactivity,,,,,,,,5,6,6,6,2,4,4,4,6,7,1,4,6,7,6,6,7,5,7,7,5,6,5,5,36,0,,white,1,7,1,4,1,1,1,1,1,1,1,1,6,1,1,Suppression
-They eat to much. ,No exercise.,Poor diet.,To many sugars and carbs.,They have a slow metabolism.,No activity.,Desk jobs.,Depression.,Anxiety.,Addiction.,,,,,,,,,,,6,6,5,5,6,5,5,5,5,5,6,5,2,2,1,2,6,3,5,6,6,6,6,6,42,1,,White,7,1,1,2,1,1,1,1,1,5,6,6,6,6,5,Expression
-Genetic predisposition,Diet,Lack of exercise,Fast food,Sedentary job ,Sedentary lifestyle,Low self esteem,Medication side effects,Hormone imbalance,Old age,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,27,1,,White,6,2,2,4,2,2,2,3,3,5,4,3,7,5,5,Expression
-,,,,,,,,,,Impulse control,depression,thyroid issues,handicap that prevents them from getting enough exercise,genetics,parents never taught them how to diet properly,they want to be fat,don't have time to exercise,work in a job where they sit all day,don't have access to healthy food,4,5,5,5,5,2,6,6,6,6,2,2,7,6,6,7,7,7,6,6,6,7,7,7,33,1,,white,4,4,6,7,3,3,4,6,3,7,7,7,7,7,7,Suppression
-Thyroid Problem,Unhealthy Diet,Medication  Side Effect,Depression,Low Energy Lifestyle; Work sitting at a desk to go home and sit on a sofa.,Bed Ridden,Genetics,Doesn't Exercise,Pregnant,Sympathy Weight; Like when a male might gain weight because his significant other is gaining weight from pregnancy.,,,,,,,,,,,6,6,6,6,6,6,5,6,5,6,6,6,6,7,6,7,7,7,7,7,6,7,6,6,27,0,,Black/African American,2,6,2,2,2,1,1,1,1,6,3,7,5,5,4,Expression
-,,,,,,,,,,thyroid,addiction,no access to food education,not able to purchase healthy food,disability that inhibits exercise,pregnancy,illness,limited food choice options,metabolic syndrome,diabetes,5,5,5,4,1,3,5,5,5,5,1,2,5,5,5,5,6,6,5,5,5,5,2,3,44,0,,white,1,7,2,2,2,2,2,2,2,5,2,3,3,3,3,Suppression
-laziness,hormonal problems,psychological disturbs,,,,,,,,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,38,1,,caucasian,4,4,2,4,2,2,2,2,2,5,3,6,6,6,6,Expression
-,,,,,,,,,,genetics,abuse,environment,their genetics,the abuse that happened to them,maybe their environment,how about the genetics,the abuse,always genetics,always abuse,3,2,2,2,2,1,5,5,6,6,2,5,6,7,6,5,6,6,5,6,6,7,6,6,34,1,,white,5,5,6,6,6,5,5,6,7,5,6,6,6,5,6,Suppression
-Because of their genes.,Because they are lazy.,Because they can't resist food.,Because they eat too much.,,,,,,,,,,,,,,,,,6,7,7,6,7,6,6,7,7,7,6,6,6,7,7,6,7,6,5,6,6,6,6,5,31,1,,White,4,4,1,5,1,1,1,1,2,2,1,1,6,6,2,Expression
-,,,,,,,,,,Poor diet guidelines,"Sugar being promoted as healthy, even in moderation",Fats being avoided in most diets,Lack of exercise in daily commuting ,Lack of healthy food choices for basic income,Stress of daily life,Pace of daily life,Lack of recreational activity nearby that people can walk to,Lack of walkable cities / neighborhoods,Poor habit formation in educational system,4,4,4,4,1,1,4,4,4,4,1,1,6,6,6,6,6,6,6,6,6,6,6,6,32,1,,caucasian & middle eastern,3,5,1,3,1,1,2,1,1,5,1,4,7,4,4,Suppression
-They overeat,They don't exercise enough,They consume too much sugar,They don't have a balanced diet,"Too much calorie intake, not enough activity.",Too much carbs.,Too much beer.,,,,,,,,,,,,,,5,5,5,5,5,3,4,5,5,5,5,3,2,2,2,2,2,3,4,4,4,4,4,2,44,1,,Asian,4,4,3,3,2,2,3,3,3,3,5,5,5,4,6,Expression
-,,,,,,,,,,It is genetic,It is hereditary,They eat too much because they feel stress,It is a compulsion,They do not know about proper nutrition,,,,,,7,7,7,7,4,6,7,7,7,7,3,6,5,5,5,5,7,6,6,6,6,6,7,6,54,0,,White European American,2,6,3,5,2,3,2,4,5,4,4,2,6,6,4,Suppression
-genetics,lazy,depressed,like to eat,don't like exercise,office job,fast food,too many business luncheons,guilt,beer,,,,,,,,,,,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,53,1,,Taiwanese,7,1,7,7,7,7,7,6,7,2,1,2,6,6,6,Expression
-,,,,,,,,,,thyroid problem,diabetes,ambulation difficulties,psychological syndromes,metabolic issues,genetic syndromes,familial size,food intolerances,musculoskeletal movement disorders,paralysis,4,4,4,4,1,1,3,3,3,4,1,1,6,6,6,7,7,7,4,4,4,3,1,1,61,0,,Caucasian,2,6,1,1,1,1,1,1,1,4,4,2,2,1,1,Suppression
-Overeating,Bad thyroid,Poor habits,Been fat since childhood,Bad parenting,stress eating,eating to fill a void,feeling bad so eating,Glutonous,Lazy,,,,,,,,,,,6,6,6,7,7,5,6,6,6,7,6,7,4,4,5,6,5,5,4,6,6,6,7,5,31,1,,Caucasian,5,3,6,6,6,5,5,7,6,7,7,5,6,7,5,Expression
-Lack of will power,Lack of free time,Limited access to healthy food,Limited income,Poor choice of diet,Not enough exercise,Medical condition,,,,,,,,,,,,,,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,26,1,,White,1,7,1,5,1,1,1,1,1,3,3,1,7,7,5,Expression
-Lack of motivation,They don't care about weight,Addicted to bad foods,Stationary lifestyle,Rise of fast food places,American diet is high in unhealthy food,Depression,Injuries,Dislike excessive ,Dislike dieting ,,,,,,,,,,,6,6,6,6,7,7,6,6,6,6,7,7,3,3,3,3,4,2,5,5,5,5,5,5,23,1,,Black,2,2,3,5,3,2,3,4,4,5,3,6,4,6,6,Expression
-because they are glutonous,because they are lazy,because they have no shame,because they don't care,,,,,,,,,,,,,,,,,4,4,4,7,7,7,4,4,4,7,7,7,4,4,4,1,7,1,4,4,4,1,7,1,33,1,,white,4,4,6,7,1,1,5,5,1,1,5,1,7,6,7,Expression
-,,,,,,,,,,Overeating,Eating disorder,Genetics,Thyroid problem,Depression ,,,,,,1,2,1,6,1,2,1,3,5,6,1,6,4,5,6,7,7,6,3,3,6,6,3,5,19,1,,White,1,7,1,1,1,1,1,4,1,7,7,7,7,3,3,Suppression
-,,,,,,,,,,high calorie food,saturated fats,sugary drinks,,,,,,,,6,6,7,6,1,5,7,6,6,7,1,6,6,6,7,6,7,2,6,5,6,6,6,2,21,1,,caucasian,3,4,4,5,2,2,2,4,1,5,4,3,6,5,7,Suppression
-,,,,,,,,,,Disabilities that cause inability to be physically active,Medication causing weight gain,Metabolic disorders,Not being taught by parents how to eat healthy,Too much work to spend time exercising,Stationary jobs with constant sitting and no moving around,Eating disorders,Medication causing constant hunger/food cravings,Injuries that limit physical activities like exercise,Being forced to clear their plates constantly,7,7,7,7,1,5,7,7,7,7,1,7,6,6,6,6,7,6,7,7,7,7,7,6,22,0,,White,6,4,1,3,1,1,1,1,1,5,3,7,6,5,5,Suppression
-,,,,,,,,,,genetic predisposition,lack of education about diet and nutrition,socio-economic constraints,lack of proper exercise,disease/illness,psychological conditions,lack of self-control,coping outlet,inconsistent daily schedule,cultural expectations,5,5,4,4,3,5,5,5,4,5,2,2,5,5,4,6,7,6,5,5,4,5,7,7,27,1,,white,4,4,1,1,2,1,1,2,1,3,3,1,5,2,3,Suppression
-No self control,Medical illness,Over eating,No excercise,Wrong diet,Lazy,Depression,Immobilization from injury,Genetics,Their job requires them to be fat,,,,,,,,,,,6,6,6,6,7,6,6,6,6,7,7,6,5,5,5,6,7,7,5,5,5,7,7,7,29,1,,Asian,2,5,1,1,2,4,2,3,2,6,7,5,7,5,5,Expression
-eat too much,insecure,genetically inclined,side effect of illness,lack of self control,cultural attractiveness of fatness,lazy,injury prevents exercise,too much social eating,not enough exercise,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,4,57,0,,caucasian,6,1,3,4,2,1,2,4,2,5,6,6,4,6,4,Expression
-they don't care about themselves,medical condition,they don't mind being fat,they think certain people will like them,they eat too much,,,,,,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,50,0,,white,1,6,1,4,6,1,1,1,2,6,1,1,6,6,6,Expression
-,,,,,,,,,,no excierise,eating unhealthy food,genetics,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,2,6,19,1,,white,3,4,5,6,6,6,6,6,6,6,6,6,6,6,6,Suppression
-genetics,laziness,lack of control,emotional eating,lack of exercise,poor judgement of portion size,gluttony,medication side effects,poor food choices,eat more calories than they burn,,,,,,,,,,,4,4,4,4,7,5,4,4,4,4,7,5,4,4,4,5,7,5,4,4,4,5,6,5,28,0,,white,4,4,1,3,1,1,2,2,2,6,5,4,5,5,5,Expression
-genetics,laziness,lack of support/advice,poor exercise habits,stress,low self-esteem,abusive relationship,happy to be fat,eating too many foods,eating unhealthy foods,,,,,,,,,,,7,7,7,6,7,7,7,7,7,6,7,7,7,7,7,7,7,7,7,7,7,6,7,7,40,1,,Caucasian,2,6,1,3,1,1,1,1,1,3,2,3,2,5,2,Expression
-,,,,,,,,,,don't know what foods are healthy,genes make them fat,focused on things other than eating,seek to enjoy life,lack of money for purchasing healthy foods,live in a cold region where being fat helps preserve body heat,local stores only sell food that promotes fatness,"due to work situation, have no time for finding healthy options",have jobs that promote a sedentary lifestyle,work in a kitchen that requires sampling all foods,7,7,7,7,1,7,7,6,6,7,1,7,4,4,4,5,6,5,3,3,3,3,6,6,46,1,,white,6,2,4,6,3,5,4,4,5,4,3,4,5,6,6,Suppression
-,,,,,,,,,,Genetics,Fast food availability,Cost of healthy food,Medications,Disease and disorders,Mental illness,,,,,5,2,4,6,2,5,6,6,6,6,2,4,6,6,6,6,6,6,6,6,6,6,6,6,31,0,,White,2,5,2,2,2,2,2,2,2,5,6,6,5,3,2,Suppression
-,,,,,,,,,,Medical condition,Suffered traumatic event,"Not able to exercise due to time, injury or other circumstances",Allergies,Happy just the way they are,Always feel hungry,Side effect from medication,Eating disorder,Genetic predisposition,Healthy foods are really expensive,4,4,4,6,2,3,1,1,1,6,1,2,6,6,6,6,6,6,6,6,6,6,6,6,32,0,,White,1,7,1,1,1,1,1,1,1,5,4,4,4,4,2,Suppression
-they eat too much fast food,they eat too much,they're lazy,they eat the wrong foods,they just don't care,their portion sizes are way off,"they don't make much money, unhealthy food is cheap",they have a medical problem,they won't excercise,they're depressed,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,7,6,6,6,6,6,5,6,6,6,6,6,5,33,0,,white,1,5,5,6,2,5,4,5,5,5,6,3,7,6,7,Expression
-because the food is tasty,the food has GMO,because of the cheese,"because of soda,",lack of exercise,too much TV,laziness,too much social media,too much sweets,too much snakcs,,,,,,,,,,,5,5,5,5,6,5,5,6,5,5,5,6,5,5,5,5,4,5,5,5,5,5,5,5,41,1,,white,3,6,5,3,3,5,3,5,5,5,5,6,5,5,6,Expression
-laziness,don't know how to diet,don't care about appearances,happier that way,health problems,poor lifestyle,,,,,,,,,,,,,,,6,6,6,6,7,7,6,6,6,6,7,7,5,5,5,5,7,6,6,6,6,6,7,7,23,0,,Hispanic,1,7,1,4,1,1,1,1,1,7,7,7,7,7,5,Expression
-,,,,,,,,,,Genetics,Diet,Inactivity,Environment,Medication,Hormones,,,,,6,5,6,6,3,6,6,6,5,7,1,2,6,6,5,7,6,6,6,7,6,6,6,7,28,1,,Caucasian,3,5,2,5,1,2,2,2,2,6,5,6,7,6,2,Suppression
-,,,,,,,,,,Genetics,Depression,Disease,Lack of Activity,Depression,,,,,,6,6,6,5,6,5,6,6,6,6,6,6,6,5,6,6,5,6,5,5,6,7,6,7,19,1,,Hispanic,2,5,2,2,2,1,2,2,1,2,2,2,5,5,2,Suppression
-overeat,no food control,dopamine rushes,,,,,,,,,,,,,,,,,,5,3,5,5,3,5,6,2,5,5,2,4,5,3,4,5,5,5,6,6,6,3,5,4,30,1,,hispanic,5,4,5,3,4,4,5,6,3,5,4,5,5,5,6,Expression
-,,,,,,,,,,genetics,medication side effects,,,,,,,,,3,3,3,4,1,4,4,4,5,4,1,4,6,6,6,6,7,7,5,5,5,5,4,4,50,1,,White,6,2,2,1,2,1,2,4,1,6,3,6,5,2,4,Suppression
-depression,overeating,slow metabolism,overabundance of food,eat the wrong food,no exercise,,,,,,,,,,,,,,,4,4,4,4,6,6,3,3,4,4,6,6,4,4,4,4,6,6,4,4,4,4,6,6,37,0,,caucasian,4,4,5,2,2,1,1,5,1,7,6,7,5,7,4,Expression
-,,,,,,,,,,metabolism,poor diet,depression,heredity,poverty,,,,,,5,5,5,3,1,2,6,6,6,4,1,2,6,6,6,6,6,6,6,6,6,5,5,6,48,0,,multiracial,1,7,1,3,1,1,1,2,1,2,2,1,3,1,2,Suppression
-,,,,,,,,,,They grew up in a low-income household,They were not able to learn better in school,Information provided didn't help their means while growing up,Their perception of nutrition was not in line with their home-lives,Something may have come up where things were hard and food was a nice option to turn to,"Food is something we must live with, you cannot quit food",Disease and disability are hard to manage when someone is used to an able diet,"They live in a grocery drought, food drought, whatever it is. There are not many grocery stores in their area","Emotion and hard times can get to people, and food is an immediate release","Nutrition labels aren't very accurate, and many people may not know what all is in their food",6,6,6,5,1,5,5,3,5,5,1,5,5,5,6,5,6,2,6,6,5,6,7,7,21,0,,Black/White,1,7,1,2,1,1,1,1,1,6,7,6,3,1,1,Suppression
-"Because food, like anything else, can be addictive. But when you kick heroin you never have to see it again in your life. But food? We need food to live. You can never quit food. Now imagine being addicted to it. That's a hard cycle to break",Because most of our food is processed and has hidden additives that affect our bodies in negative ways,Because nutrition isn't taught well enough. People need to be more aware of what a balanced meal really means and how certain food affect our bodies,"Because we live a much more laid back lifestyle then people in the past did. More sitting jobs, less incentives to get up and move around",Exercise is hard and unfulfilling for some people. It is very hard to motivate someone who hates exercising to exercise. ,Food is delicious and comforting. When dealing in traumatic situations some people learn to comfort themselves with food. They do this to make them feel better when they are in a negative mood or having negative thoughts,Legitimate health excuse such as fibromyalgia or chronic fatique,Fast food is cheaper and easier to access than fresh or healthier foods,As a society we value carb based diets way too much,As a society we aren't taught how sugar and protein affects our bodies so we never think about what we are eating,,,,,,,,,,,6,6,6,6,6,4,7,7,7,7,7,6,7,7,7,7,7,7,7,7,7,7,7,7,26,0,,Mestiza/Mexican American,1,7,1,2,1,1,1,1,1,5,5,3,5,5,2,Expression
-,,,,,,,,,,genetics,non-supporting environments,lack of access to fitness programs,lack of education regarding nutrition,metabolism issues,depression,job does not allow for more active lifestyle,,,,5,5,4,5,6,6,3,3,3,4,7,4,6,6,6,6,2,6,6,6,6,6,3,5,34,0,,white,6,2,1,2,1,1,1,2,1,7,7,7,7,6,2,Suppression
-genetics,household situation,access to food or lack thereof,lack of willpower,,,,,,,,,,,,,,,,,6,6,6,6,7,5,6,6,6,5,7,2,6,6,6,6,6,6,6,6,6,6,7,6,55,1,,White,2,6,2,1,2,2,1,2,1,5,2,5,5,1,1,Expression
-Thyroid Issues,Medication Side Effect,Depression,Choosing fast food instead of healthy meals,Uneducated on proper nutrition,Addiction to food,Poor self esteeme,Inactive life style,Lack of exercise,Bedbound,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5,5,5,59,0,,White,2,6,1,1,1,2,1,3,1,6,5,6,5,5,5,Expression
-,,,,,,,,,,Family history,Hormones,Body structure,Not enough access to healthy foods,Physically disabled ,They have a sedentary job,Their friend group's habits and outings,,,,4,4,5,5,1,5,4,4,5,5,1,4,5,6,5,5,7,4,5,6,5,6,7,6,37,0,,White,2,2,1,3,2,1,2,2,4,5,5,6,5,6,3,Suppression
-Because they eat too much,Emotional eating,Physical problems,Lazy,Not able to work out,,,,,,,,,,,,,,,,5,5,4,5,5,4,6,6,5,6,6,6,6,5,5,7,6,6,6,6,5,6,5,5,25,0,,Egyptian,5,4,4,5,3,3,4,5,4,7,7,6,5,5,4,Expression
-,,,,,,,,,,Genetics,Health condition,Living in a food desert,Depression,Low income/cannot afford healthy foods,,,,,,6,6,6,6,3,5,6,6,6,6,2,5,6,6,6,6,6,6,6,6,6,6,6,6,23,0,,Hispanic/Latino,2,7,2,4,2,2,2,2,1,2,5,2,5,2,3,Suppression
-,,,,,,,,,,Diabetes,Glandular problem,Metabolism is out of wack,quit drugs,,,,,,,6,7,6,6,1,2,6,6,6,6,1,2,6,6,6,6,7,6,6,6,6,6,6,6,33,1,,White,5,4,2,2,2,2,2,2,5,2,2,1,6,3,5,Suppression
-genetics,addictions,low self esteem,love to eat,lazy,dont care,,,,,,,,,,,,,,,5,4,5,5,6,5,6,6,6,6,6,6,5,5,5,6,5,6,5,5,5,6,6,6,35,1,,white,5,5,2,6,2,3,2,3,4,3,3,2,6,6,5,Expression
-They eat too much,They don't exercise enough,They can't control their impulses,They are sedentary,They don't care about their appearance,,,,,,,,,,,,,,,,5,5,4,4,4,4,6,6,6,6,6,6,2,2,2,2,2,2,2,2,2,2,2,2,37,1,,white,4,4,6,6,6,6,6,6,6,6,6,6,6,6,6,Expression
-,,,,,,,,,,depression,bullying ,no self confidence,bad upbringing,lack of knowledge,not motivated to change for some reason,introvert,no health education,stress,disorder,6,6,7,7,2,6,6,6,6,6,1,5,6,6,5,6,7,6,7,7,7,7,7,6,37,1,,white,3,3,1,2,1,1,1,1,1,2,1,3,7,7,4,Suppression
-There are a combination of genetic complications that effect base weight.,People in more prosperous countries have access to more food.,People with lower income often eat less healthy foods.,Appetite and lack of exercise impact weight.,Technology has helped people accomplish more without much physical activity.,People don't have the time to change their lifestyles.,,,,,,,,,,,,,,,5,5,5,6,5,3,5,6,6,6,7,6,6,7,7,7,7,7,6,6,7,6,6,7,26,1,,Black,3,4,1,3,1,1,1,2,2,1,1,1,6,3,3,Expression
-,,,,,,,,,,Metabolic syndrome,Diabetes,disability,malnutrition,drug side effect,poverty,sugar,lack of access to nutritious food,no time to prepare healthy food,additives in food,2,1,2,1,1,2,2,2,2,1,1,1,6,5,6,6,6,7,6,6,6,5,6,6,54,0,,White,6,2,1,2,1,1,1,2,1,2,2,2,2,2,2,Suppression
-lazy,genetic,bad habits,society,environment,not enough exercise ,food is not top quality anymore,healthy food is too expensive,home environment,parents,,,,,,,,,,,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,27,0,,wite,3,4,2,6,1,1,2,1,2,1,2,2,4,6,1,Expression
-Consume too much food.,Depression.,Societal reasons.,They don't know how to eat healthy.,Poverty.,Genetics.,Peer pressure.,Bad parental upbringing.,Aesthetics.,Personal reasons.,,,,,,,,,,,6,6,6,6,6,6,5,5,5,6,6,5,6,6,6,6,6,6,6,6,6,6,6,6,24,1,,Vietnamese,1,6,1,2,1,1,1,1,1,2,1,1,2,4,3,Expression
-,,,,,,,,,,genetics ,diet,culture,age,preference,excercise,illness,disability,work,depression,5,5,5,5,2,5,6,6,6,6,2,6,6,6,6,6,6,6,5,5,5,5,6,6,41,1,,Caucasian,3,6,1,2,1,1,1,1,1,2,3,3,7,7,3,Suppression
-,,,,,,,,,,Genetics,Medical side effects,Health problems,,,,,,,,6,6,6,6,1,4,6,6,5,6,1,4,5,5,5,5,7,5,6,6,6,6,5,4,24,1,,White / Caucasian,4,4,4,5,4,2,4,5,4,5,5,6,5,4,4,Suppression
-,,,,,,,,,,Slow burning metabolism,cannot afford the right nutritonal foods,gentic make up,family life,Trouble finding the time to go to the gym because working too many hours or attending a lot of school,Some people are better at absorbing calories,In the genes or family history,Not enough sleep,stress issues,Available shopping areas for healty foods,5,5,5,5,5,5,2,2,2,3,3,3,7,7,7,7,7,7,6,6,6,6,6,6,54,0,,American/White,1,7,1,1,1,1,1,1,1,3,5,3,5,5,2,Suppression
-eat too much,slow metabolism,stress,not enough excercise,,,,,,,,,,,,,,,,,4,4,4,4,4,4,4,5,5,5,4,4,3,3,4,4,4,4,4,4,4,4,4,4,31,1,,vietnamese,4,4,3,3,3,3,3,3,3,2,4,2,5,4,4,Expression
-They consume more calories than they burn,They have a handicap,They have thyroid problems,They are genetically predisposed to being overweight,They like high calorie foods,They do not exercise regularly,,,,,,,,,,,,,,,5,5,5,5,5,3,5,5,5,5,5,3,6,6,6,6,6,6,6,6,6,6,6,6,29,0,,caucasian,5,3,1,1,1,1,1,1,1,5,1,3,5,5,3,Expression
-Lazy,Unmotivated,sick,eat too much,no exersize,unhealthy,bloated,bad back,fast food,depressed,,,,,,,,,,,5,5,5,6,6,6,4,5,4,5,6,6,5,6,5,5,6,5,5,5,5,6,6,6,55,1,,white,2,6,2,6,2,6,2,2,7,7,7,7,5,6,6,Expression
-,,,,,,,,,,,,,,,,,,,,6,7,5,6,7,5,4,5,6,6,5,4,5,4,7,5,4,6,4,5,3,6,4,5,26,1,,white,5,7,6,5,6,6,4,3,4,5,4,3,4,3,3,Expression
-eat too much,not active enough,not enough exercise,genetics,eat wrong foods,eat for comfort,,,,,,,,,,,,,,,6,6,6,6,7,7,6,6,6,6,7,6,6,6,6,6,7,6,4,6,5,6,6,5,37,0,,white,3,4,2,4,1,1,2,2,2,3,4,3,5,5,3,Expression
-,,,,,,,,,,genes,advertising,big bones,food is irrestabel,parants,friends,socity,men ,patriarchy,white people,5,5,5,5,1,5,5,5,5,5,1,5,3,3,3,3,7,5,5,5,5,5,7,5,55,0,,white,2,6,3,3,3,3,3,5,5,5,3,5,5,5,5,Suppression
-,,,,,,,,,,genetics,hormonal issues,depression,stress,lack of adequate amounts of sleep,disease,the way they were raised,poverty (can't afford healthy food),lack of healthy food options,injury (can't exercise),4,4,4,4,5,5,4,4,4,4,1,7,4,4,4,4,7,7,4,4,4,4,7,7,33,1,,White,6,4,4,5,1,1,2,2,2,5,6,6,7,5,6,Suppression
-,,,,,,,,,,genetics,lack of support,lack of resources,lack of education,no access to good nutrition,no access to nutritionists,no access to physical activity,no access to support groups,lack of mental health care,body shaming,4,4,4,4,6,6,4,4,4,4,1,1,4,4,4,6,6,6,6,6,6,6,6,6,42,0,,multi-racial,4,5,1,1,1,1,1,1,1,3,3,3,5,1,1,Suppression
-,,,,,,,,,,disability,cravings,hormone issues,no time,no time for healthy diet or exercise,stress overeating,lack of nutritional information of knowledge,food deserts,no energy,,5,4,4,5,3,2,3,4,4,5,1,4,5,4,4,5,5,6,5,4,4,5,6,6,25,0,,white,1,6,2,3,2,2,2,2,2,5,2,4,5,4,4,Suppression
+descriptive,auth_auth_1,auth_auth_2,auth_auth_3,auth_auth_4,age,gender,gender_text,race,race_text,cond
+56,5,6,7,7,20,1,,8,,hi
+73,4,5,5,4,40,0,,8,,hi
+40,3,3,3,3,24,0,,9,black/white,hi
+73,2,2,2,2,35,1,,8,,hi
+60,2,1,2,2,48,0,,8,,hi
+55,6,6,6,6,25,1,,8,,hi
+50,5,5,6,7,60,0,,8,,hi
+20,7,7,7,7,42,1,,2,,hi
+60,4,4,4,4,38,0,,8,,hi
+45,5,5,6,6,22,1,,2,,hi
+35,3,5,4,2,23,1,,8,,hi
+92,7,7,7,7,42,0,,3,,hi
+31,5,5,6,6,24,0,,2,,hi
+70,6,6,6,6,48,0,,3,,hi
+62,6,5,6,7,26,0,,8,,hi
+30,4,4,4,4,43,0,,8,,hi
+60,7,7,7,7,35,0,,8,,hi
+50,4,3,4,4,35,1,,8,,hi
+28,2,3,3,3,39,0,,8,,hi
+28,5,7,7,7,27,0,,2,,hi
+25,6,6,6,6,27,1,,1,,hi
+29,6,4,6,5,28,0,,3,,hi
+29,5,6,6,6,18,1,,8,,hi
+69,4,4,4,4,21,0,,5,,hi
+16,1,1,1,1,28,0,,8,,hi
+59,4,4,4,5,40,1,,8,,hi
+80,6,6,6,6,43,0,,8,,hi
+70,6,6,6,5,24,1,,8,,hi
+35,7,7,7,7,26,0,,8,,hi
+75,2,5,2,2,35,1,,8,,hi
+25,6,5,6,6,27,0,,8,,hi
+52,4,4,4,4,38,0,,8,,hi
+77,6,6,6,6,34,0,,8,,hi
+61,7,7,7,7,28,0,,8,,hi
+95,7,7,7,7,25,1,,8,,hi
+40,6,4,6,6,27,0,,2,,hi
+66,4,6,6,6,39,0,,3,,hi
+65,7,7,7,7,31,1,,8,,hi
+9,3,6,3,3,29,1,,2,,hi
+40,5,5,5,7,45,1,,8,,hi
+28,5,7,6,7,26,0,,3,,hi
+70,6,6,6,7,25,0,,8,,hi
+66,4,4,4,7,71,0,,8,,hi
+25,6,5,3,3,33,2,transmasculine/questioning,8,,hi
+90,7,7,7,7,57,1,,3,,hi
+75,7,6,6,6,21,1,,2,,hi
+71,5,6,6,6,47,1,,8,,hi
+35,6,6,6,6,24,1,,8,,hi
+31,3,4,3,3,26,0,,9,white/black,hi
+60,6,6,6,6,61,0,,8,,hi
+60,7,7,7,7,51,1,,3,,hi
+65,6,3,4,3,32,0,,7,,hi
+70,6,6,6,6,24,0,,2,,hi
+81,7,7,7,7,30,1,,8,,hi
+9,7,7,7,7,58,0,,8,,hi
+38,5,5,5,5,34,1,,8,,hi
+61,6,5,7,7,26,0,,8,,hi
+29,5,5,5,5,38,0,,8,,hi
+49,4,4,3,5,29,0,,8,,hi
+46,3,3,3,3,61,1,,8,,hi
+40,7,7,7,7,27,0,,8,,hi
+68,5,6,6,5,35,0,,8,,hi
+55,7,7,7,7,24,1,,8,,hi
+50,5,4,6,3,38,0,,2,,hi
+59,4,5,5,5,36,0,,8,,hi
+60,7,7,7,7,30,0,,8,,hi
+23,5,5,5,5,28,1,,3,,hi
+80,7,7,7,7,56,0,,8,,hi
+75,7,7,7,7,31,1,,8,,hi
+87,4,5,5,6,33,0,,8,,hi
+75,1,6,6,6,40,0,,5,,hi
+68,5,4,4,4,19,0,,3,,hi
+67,5,4,4,6,18,1,,2,,hi
+50,7,7,7,7,42,0,,8,,hi
+29,7,7,7,7,42,1,,5,,hi
+75,5,2,2,5,36,0,,8,,hi
+30,5,6,6,7,59,0,,3,,hi
+28,5,5,5,5,42,0,,8,,hi
+45,6,1,2,3,20,1,,3,,hi
+60,4,5,6,5,29,1,,8,,hi
+70,3,4,4,5,32,0,,5,,hi
+72,3,3,3,3,42,0,,8,,hi
+40,5,5,5,5,50,1,,8,,hi
+70,5,5,5,6,42,1,,8,,hi
+53,4,4,3,4,23,1,,8,,hi
+45,4,3,3,3,46,0,,3,,hi
+70,6,6,6,6,55,0,,8,,hi
+82,5,5,5,5,27,1,,8,,hi
+55,6,6,6,6,52,0,,8,,hi
+70,4,4,4,4,21,2,Man of trans experience,8,,hi
+76,5,5,5,5,26,0,,8,,hi
+80,7,7,7,7,22,0,,8,,hi
+55,6,6,6,7,24,0,,8,,hi
+50,7,4,1,1,20,0,,5,,hi
+80,7,6,5,5,44,0,,8,,hi
+60,6,5,6,4,42,0,,8,,hi
+50,6,6,7,7,32,0,,8,,hi
+20,6,6,6,6,48,1,,8,,hi
+35,7,7,7,7,46,1,,8,,hi
+86,6,6,6,7,34,1,,8,,hi
+81,5,5,5,5,47,0,,8,,hi
+68,6,3,3,5,28,0,,8,,hi
+25,3,5,5,5,28,1,,8,,hi
+80,7,6,7,7,34,0,,8,,hi
+70,6,4,4,4,35,0,,8,,hi
+32,4,6,6,6,31,0,,8,,hi
+25,5,5,5,5,21,0,,2,,lo
+70,4,4,4,4,40,0,,2,,lo
+70,3,4,5,2,20,0,,8,,lo
+22,7,7,7,7,31,0,,8,,lo
+15,5,5,4,5,35,0,,8,,lo
+38,7,7,7,7,37,0,,8,,lo
+18,5,6,6,6,23,0,,8,,lo
+45,7,1,1,1,42,0,,8,,lo
+10,6,6,6,6,25,0,,8,,lo
+18,6,6,6,6,66,0,,8,,lo
+13,6,6,2,5,33,0,,5,,lo
+5,5,6,6,6,22,1,,8,,lo
+40,6,5,4,6,22,0,,8,,lo
+18,6,7,6,5,28,1,,2,,lo
+70,7,7,7,7,22,0,,8,,lo
+19,4,4,5,6,29,0,,8,,lo
+4,2,2,2,2,22,2,Nonbinary (femme),8,,lo
+70,5,5,5,5,23,0,,9,White/Asian,lo
+20,5,6,6,6,31,0,,2,,lo
+70,5,6,6,6,28,0,,2,,lo
+2,7,7,7,7,27,0,,4,,lo
+10,1,1,1,1,35,0,,8,,lo
+8,4,4,2,2,21,1,,3,,lo
+9,3,3,3,3,54,0,,8,,lo
+25,7,7,7,7,24,1,,8,,lo
+9,4,5,5,5,25,0,,3,,lo
+30,6,6,6,6,33,0,,8,,lo
+24,6,4,6,6,35,1,,3,,lo
+50,7,7,7,4,24,0,,8,,lo
+21,6,6,6,5,22,0,,8,,lo
+50,5,4,3,3,25,1,,8,,lo
+28,1,1,1,1,20,1,,5,,lo
+11,4,5,5,5,52,1,,8,,lo
+76,2,5,2,2,35,1,,8,,lo
+20,6,6,6,6,25,0,,8,,lo
+57,6,5,5,6,30,0,,1,,lo
+61,6,6,6,6,34,1,,2,,lo
+63,6,6,6,7,23,1,,2,,lo
+15,2,1,2,2,24,0,,8,,lo
+15,3,2,3,6,39,0,,8,,lo
+25,3,3,3,3,23,0,,8,,lo
+28,5,4,4,3,29,1,,8,,lo
+10,6,5,5,7,33,0,,8,,lo
+10,6,6,6,6,33,1,,8,,lo
+2,2,2,2,2,28,1,,8,,lo
+19,7,7,7,7,27,1,,8,,lo
+49,4,4,4,4,19,1,,8,,lo
+20,2,3,4,5,51,1,,8,,lo
+20,7,7,7,7,30,1,,8,,lo
+30,6,5,6,5,52,1,,7,,lo
+15,6,6,6,6,27,0,,8,,lo
+35,7,6,6,7,20,1,,9,Black and White,lo
+10,4,4,4,7,20,1,,5,,lo
+20,4,4,4,4,31,1,,8,,lo
+10,7,6,6,7,35,1,,8,,lo
+5,5,4,2,4,53,1,,8,,lo
+19,4,4,4,4,67,0,,8,,lo
+34,7,1,7,5,32,1,,8,,lo
+15,6,6,5,6,26,1,,8,,lo
+29,3,4,2,2,27,1,,8,,lo
+75,5,5,4,4,22,1,,8,,lo
+20,5,6,5,5,39,0,,8,,lo
+9,7,7,7,7,46,0,,8,,lo
+20,3,2,2,5,33,0,,8,,lo
+17,6,6,6,6,40,0,,8,,lo
+19,6,6,6,6,51,0,,8,,lo
+66,5,4,3,5,25,1,,8,,lo
+40,7,7,7,7,28,1,,8,,lo
+10,4,3,3,5,37,0,,8,,lo
+8,7,7,7,7,43,0,,8,,lo
+10,6,5,5,5,26,1,,8,,lo
+20,6,6,6,6,40,0,,8,,lo
+21,3,3,3,3,35,0,,3,,lo
+8,7,7,7,7,55,0,,8,,lo
+70,5,4,5,5,34,0,,7,,lo
+10,7,6,6,6,29,0,,3,,lo
+53,5,5,5,5,25,1,,8,,lo
+26,3,2,2,3,40,1,,5,,lo
+7,5,4,4,6,52,0,,3,,lo
+5,6,6,6,6,53,0,,8,,lo
+38,4,4,4,4,23,1,,8,,lo
+74,5,5,5,5,55,0,,8,,lo
+50,5,4,5,5,55,0,,8,,lo
+10,6,6,6,5,22,0,,8,,lo
+20,4,4,4,5,34,0,,8,,lo
+3,5,6,6,7,54,0,,7,,lo
+55,6,5,5,6,24,1,,8,,lo
+10,6,6,6,6,53,0,,8,,lo
+10,3,4,3,4,35,0,,8,,lo
+20,7,7,7,7,40,0,,3,,lo
+65,7,7,7,5,41,0,,8,,lo
+20,6,6,6,6,55,1,,8,,lo
+20,6,6,6,6,30,0,,2,,lo
+92,6,4,3,7,36,0,,8,,lo
+20,6,5,5,2,42,0,,8,,lo
+42,3,4,5,5,30,1,,8,,lo
+30,5,3,5,6,33,1,,8,,lo
+4,6,6,6,6,33,0,,8,,lo
+10,5,6,5,6,36,1,,8,,lo
+18,7,7,7,7,44,1,,3,,lo
+7,5,5,5,5,43,0,,8,,lo
+10,6,6,6,6,27,0,,8,,lo
+31,3,2,2,2,29,1,,8,,lo
+25,6,6,6,6,32,1,,8,,lo
+28,4,5,4,5,33,0,,8,,lo
