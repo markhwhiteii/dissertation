@@ -73,7 +73,8 @@ auth3 <- auth3 %>%
     blind_prej = (100 - blind_therm),
     deaf_auth = (deaf_1 + deaf_2 + deaf_3 + deaf_4) / 4,
     deaf_prej = (100 - deaf_therm)
-  )
+  ) %>% 
+  filter(complete.cases(.))
 
 auth5 <- read_csv("../data/study5.csv")
 auth5 <- auth5[-c(61, 195), ] %>% 
@@ -105,3 +106,7 @@ auth8 <- read_csv("../data/study8.csv") %>%
     symrac = (symrac1 + symrac2 + (8 - symrac3) + symrac4 + (8 - symrac5) + 
                 (8 - symrac6) + (8 - symrac7) + symrac8) / 8
   )
+
+lapply(list(auth1, auth2, auth3, auth5, auth6, auth7, auth8), function(x) {
+  cor(x, use = "pairwise.complete.obs")
+})
