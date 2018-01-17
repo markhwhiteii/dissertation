@@ -32,3 +32,6 @@ plot <- ggplot(auth8, aes(x = symrac, y = auth, group = cond, color = cond)) +
 ggMarginal(plot, type = "histogram")
 
 cor.test(~ symrac + auth, auth8)
+
+# www.github.com/markhwhiteii/mscelns
+mscelns::t_table(auth8, "time", "cond")

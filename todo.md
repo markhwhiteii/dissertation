@@ -1,7 +1,6 @@
 ## where i am, what i am doing
 
 * write hook & introduce the main hypothesis
-* include time measure in study 8 as manip check (or is it?)  
 * perform multivariate meta-analysis on prejudice/perceived authenticity correlation  
 
 ## to the future, to the horizon
