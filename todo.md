@@ -12,7 +12,7 @@
 * write general discussion  
 * figures  
 
-## a jedi craves not these things
+## i crave not these things
 
 * formatting  
 * appendices  
