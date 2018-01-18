@@ -1,4 +1,6 @@
 library(tidyverse)
+library(metafor)
+source("rmat.R")
 ## loading in just variables needed
 ## collapsing across experimental condition in studies 5 - 8
 auth1 <- read_csv("../data/study1.csv") %>% 
@@ -37,6 +39,8 @@ auth2 <- read_csv("../data/study2.csv") %>%
              ksu_4 + (8 - ksu_5)) / 5
   ) %>% 
   select(-auth)
+auth2a <- auth2[is.na(auth2$ksu_auth), grepl("ill_imm", names(auth2))]
+auth2b <- auth2[!is.na(auth2$ksu_auth), !grepl("ill_imm", names(auth2))]
 
 auth3 <- read_csv("../data/study3.csv")
 colnames(auth3)[1:20] <- c(
@@ -107,6 +111,38 @@ auth8 <- read_csv("../data/study8.csv") %>%
                 (8 - symrac6) + (8 - symrac7) + symrac8) / 8
   )
 
-lapply(list(auth1, auth2, auth3, auth5, auth6, auth7, auth8), function(x) {
-  cor(x, use = "pairwise.complete.obs")
-})
+dfs <- list(auth1, auth2a, auth2b, auth3, auth5, auth6, auth7, auth8)
+ns <- lapply(dfs, nrow)
+cor_mats <- lapply(dfs, function(x) cor(x, use = "pairwise.complete.obs"))
+
+target_cors <- c(
+  "auth_muslim.prej_muslim", "auth_politician.prej_politician", 
+  "ill_imm_auth.ill_imm_prej", "ksu_auth.ksu_prej", "black_auth.black_prej",
+  "trans_auth.trans_prej", "fat_auth.fat_prej", "police_auth.police_prej",
+  "lawyers_auth.lawyers_prej", "business_auth.business_prej", 
+  "prostitutes_auth.prostitutes_prej", "drug_auth.drug_prej", 
+  "blind_auth.blind_prej", "deaf_auth.deaf_prej",
+  "authneg.dislike", "neg_auth.prej", "auth.prej", "auth.symrac"
+)
+
+for (i in seq_along(dfs)) {
+  if (i == 1) {
+    dat <- rmat(cor_mats[i], n = ns[[i]])$dat
+    dat <- dat[which(dat$var1var2 %in% target_cors), -c(3:4)]
+    
+    V <- rmat(cor_mats[i], n = ns[[i]])$V
+    V <- V[rownames(V) %in% target_cors, colnames(V) %in% target_cors]
+  } else {
+    dat_ <- rmat(cor_mats[i], n = ns[[i]])$dat
+    dat_ <- dat_[which(dat_$var1var2 %in% target_cors), -c(3:4)]
+    dat_$id <- i
+    dat <- rbind(dat, dat_)
+    
+    V_ <- rmat(cor_mats[i], n = ns[[i]])$V
+    V_ <- V_[rownames(V_) %in% target_cors, colnames(V_) %in% target_cors]
+    V <- as.matrix(bdiag(V, V_))
+  }
+}
+
+fit <- rma.mv(yi = dat$yi, V = V)
+fit
