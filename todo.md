@@ -1,7 +1,6 @@
 ## where i am, what i am doing
 
 * write hook & introduce the main hypothesis
-* perform multivariate meta-analysis on prejudice/perceived authenticity correlation  
 
 ## to the future, to the horizon
 
