@@ -144,5 +144,15 @@ for (i in seq_along(dfs)) {
   }
 }
 
+# fixing mistake in the loop
+dat$id[4] <- 2
+dat$id[dat$id == 4] <- 3
+
 fit <- rma.mv(yi = dat$yi, V = V)
 fit
+
+statements <- paste0("~", gsub("[.]", "+", dat$var1var2))
+datanames <- paste0("auth", dat$id)
+lapply(seq_along(statements), function(x) {
+  cor.test(as.formula(statements[x]), get(datanames[x]))
+})
