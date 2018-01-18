@@ -113,6 +113,7 @@ auth8 <- read_csv("../data/study8.csv") %>%
 
 dfs <- list(auth1, auth2a, auth2b, auth3, auth5, auth6, auth7, auth8)
 ns <- lapply(dfs, nrow)
+sum(unlist(ns))
 cor_mats <- lapply(dfs, function(x) cor(x, use = "pairwise.complete.obs"))
 
 target_cors <- c(
@@ -126,30 +127,36 @@ target_cors <- c(
 )
 
 for (i in seq_along(dfs)) {
+  tmp <- rmat(cor_mats[[i]], n = ns[[i]], rtoz = TRUE)
+  
   if (i == 1) {
-    dat <- rmat(cor_mats[i], n = ns[[i]])$dat
-    dat <- dat[which(dat$var1var2 %in% target_cors), -c(3:4)]
+    dat <- tmp$dat
+    dat <- dat[which(dat$var1var2 %in% target_cors), -c(2:3)]
+    dat$id <- i
     
-    V <- rmat(cor_mats[i], n = ns[[i]])$V
+    V <- tmp$V
     V <- V[rownames(V) %in% target_cors, colnames(V) %in% target_cors]
+    
   } else {
-    dat_ <- rmat(cor_mats[i], n = ns[[i]])$dat
-    dat_ <- dat_[which(dat_$var1var2 %in% target_cors), -c(3:4)]
+    dat_ <- tmp$dat
+    dat_ <- dat_[which(dat_$var1var2 %in% target_cors), -c(2:3)]
     dat_$id <- i
     dat <- rbind(dat, dat_)
     
-    V_ <- rmat(cor_mats[i], n = ns[[i]])$V
+    V_ <- tmp$V
     V_ <- V_[rownames(V_) %in% target_cors, colnames(V_) %in% target_cors]
     V <- as.matrix(bdiag(V, V_))
   }
+  
+  rownames(dat) <- NULL
 }
 
-# fixing mistake in the loop
+# fixing study number
 dat$id[4] <- 2
 dat$id[dat$id == 4] <- 3
 
 fit <- rma.mv(yi = dat$yi, V = V)
-fit
+lapply(list(fit$beta[[1]], fit$ci.lb, fit$ci.ub), transf.ztor)
 
 statements <- paste0("~", gsub("[.]", "+", dat$var1var2))
 datanames <- paste0("auth", dat$id)
