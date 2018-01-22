@@ -102,7 +102,8 @@ round(summary(med_fit)$coef, 5)
 out_fit <- lmer(authenticity ~ prejudice + normativity + 
                   (1 + prejudice + normativity | id), 
                 data = auth3)
-summary(out_fit)
+summary(out_fit)$coef
+
 
 ## prej x pc interaction for each target group separately
 lapply(levels(auth3$group), function(x) {
