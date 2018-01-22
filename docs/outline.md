@@ -8,13 +8,14 @@
     - vicarious justification
     - rearticulation
 * theories behind causal mechanisms for relationship
-    - attribution and norms
+    - prescriptive norms
     - social projection
     - balance
     - motivated reasoning
 * overview of current studies
 
 ### empirical studies
+...
 
 ### general discussion
 * list of things to cover, in no order:
