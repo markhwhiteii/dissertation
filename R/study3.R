@@ -106,12 +106,6 @@ summary(out_fit)
 
 ## prej x pc interaction for each target group separately
 lapply(levels(auth3$group), function(x) {
-  summary(
-    lmer(authenticity ~ prejudice * pc + 
-           (1 + prejudice | id), data = auth3[auth3$group == x, ])
-  )
+  summary(lm(authenticity ~ prejudice * pc, data = auth3[auth3$group == x, ]))
 })
-
-
-
-
+levels(auth3$group)[7]
