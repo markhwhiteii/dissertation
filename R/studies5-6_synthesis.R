@@ -36,7 +36,13 @@ auth6 <- auth6[-73, ]
 
 dat <- auth5[, c("cond", "dislike", "authneg")] %>% 
   transmute(cond = cond, prej = dislike, neg_auth = authneg) %>% 
-  bind_rows(auth6[, c("cond", "prej", "neg_auth")])
+  bind_rows(auth6[, c("cond", "prej", "neg_auth")]) %>% 
+  mutate(study = factor(c(
+    rep("study5", nrow(auth5)), rep("study6", nrow(auth6))
+  )))
 
 summary(lm(neg_auth ~ prej * cond, dat))
 summary(lm(neg_auth ~ prej * relevel(cond, "Suppression"), dat))
+summary(lm(neg_auth ~ prej * cond * study, dat))
+
+
