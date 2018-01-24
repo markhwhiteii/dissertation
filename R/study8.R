@@ -35,3 +35,5 @@ cor.test(~ symrac + auth, auth8)
 
 # www.github.com/markhwhiteii/mscelns
 mscelns::t_table(auth8, "time", "cond")
+summary(lm(time ~ cond * symrac, auth8))
+cor.test(~ time + symrac, auth8)
