@@ -43,6 +43,5 @@ dat <- auth5[, c("cond", "dislike", "authneg")] %>%
 
 summary(lm(neg_auth ~ prej * cond, dat))
 summary(lm(neg_auth ~ prej * relevel(cond, "Suppression"), dat))
+summary(lm(neg_auth ~ prej * cond + study, dat))
 summary(lm(neg_auth ~ prej * cond * study, dat))
-
-
