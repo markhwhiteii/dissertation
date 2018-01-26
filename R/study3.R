@@ -71,16 +71,6 @@ auth3 <- auth3 %>%
 ## analyses
 model1 <- lmer(authenticity ~ prejudice + (1 + prejudice | id), data = auth3)
 summary(model1)
-model1_ranefs <- coef(model1)$id
-ggplot() +
-  geom_abline(slope = model1_ranefs[ , 2], intercept = model1_ranefs[ , 1], 
-              color = "grey", alpha = .7, size = .25) +
-  geom_abline(slope = summary(model1)$coef[2, 1], 
-              intercept = summary(model1)$coef[1, 1], size = 1) +
-  scale_x_continuous(limits = c(-1.5 ,2), name = "Prejudice") +
-  scale_y_continuous(limits = c(-2.5, 2.5), name = "Authenticity") +
-  theme_light() +
-  theme(text = element_text(size = 18))
 
 model2 <- lmer(authenticity ~ descriptive + (1 + descriptive | id), auth3)
 summary(model2)
@@ -104,9 +94,36 @@ out_fit <- lmer(authenticity ~ prejudice + normativity +
                 data = auth3)
 summary(out_fit)$coef
 
-
 ## prej x pc interaction for each target group separately
 lapply(levels(auth3$group), function(x) {
   summary(lm(authenticity ~ prejudice * pc, data = auth3[auth3$group == x, ]))
 })
 levels(auth3$group)[7]
+
+## figures
+model1_ranefs <- coef(model1)$id
+ggplot() +
+  geom_abline(slope = model1_ranefs[ , 2], intercept = model1_ranefs[ , 1], 
+              color = "grey", alpha = .9, size = .25) +
+  geom_abline(slope = summary(model1)$coef[2, 1], 
+              intercept = summary(model1)$coef[1, 1], size = 1) +
+  scale_x_continuous(limits = c(-1.5 ,2), name = "Prejudice") +
+  scale_y_continuous(limits = c(-2.5, 2.5), name = "Authenticity") +
+  theme_light() +
+  theme(text = element_text(size = 14))
+ggsave(file = "../docs/figure3.pdf", width = 8, height = 6, dpi = 300)
+
+mod3_ss <- mlm_ss(model3, -1, 0, 1)
+ggplot() +
+  geom_abline(data = mod3_ss$ablines, 
+              aes(slope = simple_slope, 
+                  intercept = simple_intercept,
+                  linetype = as.factor(moderator_value))) +
+  scale_linetype_manual(name = "Prescriptive Normativity:",
+                        values = as.factor(mod3_ss$ablines$moderator_value),
+                        labels = c("-1 SD", "Mean", "+1 SD")) +
+  scale_x_continuous(limits = c(-1.5, 2), name = "Prejudice") +
+  scale_y_continuous(limits = c(-.75, .75), name = "Perceived Authenticity") +
+  theme_light() +
+  theme(text = element_text(size = 14), legend.position = "top")
+ggsave(file = "../docs/figure4.pdf", width = 8, height = 6, dpi = 300)

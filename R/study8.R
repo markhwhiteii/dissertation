@@ -1,5 +1,4 @@
 library(tidyverse)
-library(ggExtra)
 auth8 <- read_csv("../data/study8.csv") %>% 
   mutate(
     cond = as.factor(cond),
@@ -21,19 +20,22 @@ summary(lm(auth ~ symrac * relevel(cond, ref = "Directional"), auth8))
 
 summary(glm(I(auth == 7) ~ symrac * cond, family = binomial, data = auth8))
 
-plot <- ggplot(auth8, aes(x = symrac, y = auth, group = cond, color = cond)) +
-  geom_jitter(size = 2) +
-  geom_smooth(method = "lm", se = FALSE) +
-  labs(x = "Prejudice", y = "Authenticity") +
-  theme_light() +
-  theme(legend.title = element_blank(), legend.position = "bottom",
-        text = element_text(size = 16))
-
-ggMarginal(plot, type = "histogram")
-
 cor.test(~ symrac + auth, auth8)
 
 # www.github.com/markhwhiteii/mscelns
 mscelns::t_table(auth8, "time", "cond")
 summary(lm(time ~ cond * symrac, auth8))
 cor.test(~ time + symrac, auth8)
+
+## figure
+ggplot(auth8, aes(x = symrac, y = auth, 
+                  shape = relevel(cond, ref = "Directional"), 
+                  linetype = relevel(cond, ref = "Directional"))) +
+  geom_jitter(alpha = .9, height = .1) +
+  scale_shape_manual(values = c(16, 21)) +
+  geom_smooth(method = "lm", se = FALSE, color = "black", size = .7) +
+  theme_light() +
+  theme(legend.title = element_blank(), legend.position = "top",
+        text = element_text(size = 14)) +
+  labs(x = "Prejudice", y = "Perceived Authenticity")
+ggsave(file = "../docs/figure8.pdf", width = 8, height = 6, dpi = 300)

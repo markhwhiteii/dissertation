@@ -26,14 +26,6 @@ psych::fa(auth7[, c("atts_1", "atts_2", "atts_3")], nfactors = 1, fm = "pa")
 summary(lm(auth ~ prej * cond, auth7))
 summary(lm(auth ~ prej * relevel(cond, ref = "auth_good"), auth7))
 
-ggplot(auth7, aes(x = prej, y = auth, color = cond)) +
-  geom_jitter() +
-  geom_smooth(method = "lm", se = FALSE) + 
-  labs(x = "Prejudice", y = "Perceived Authenticity") +
-  scale_color_discrete(name = "Authenticity is...", labels = c("Bad", "Good")) +
-  theme_light() +
-  theme(text = element_text(size = 16), legend.position = "top")
-
 ## condition on authenticity and prejudice separately
 t_table(auth7, c("auth", "prej"), "cond")
 
@@ -45,3 +37,17 @@ with(auth7, cor.test(auth, prej))
 summary(lm(auth ~ prej * check_norm, auth7))
 cor.test(as.numeric(auth7$cond) - 1, auth7$check_norm)
 
+## figure
+ggplot(auth7, aes(x = prej, y = auth, 
+                  shape = relevel(cond, ref = "auth_good"), 
+                  linetype = relevel(cond, ref = "auth_good"))) +
+  geom_jitter(alpha = .9, height = .1) +
+  scale_shape_manual(values = c(16, 21), name = "Authenticity is:", 
+                     labels = c("Bad", "Good")) +
+  geom_smooth(method = "lm", se = FALSE, color = "black", size = .7) +
+  scale_linetype_discrete(name = "Authenticity is:", 
+                          labels = c("Bad", "Good")) +
+  labs(x = "Prejudice", y = "Perceived Authenticity") +
+  theme_light() +
+  theme(text = element_text(size = 14), legend.position = "top")
+ggsave(file = "../docs/figure7.pdf", width = 8, height = 6, dpi = 300)

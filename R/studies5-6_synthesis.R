@@ -55,3 +55,4 @@ ggplot(dat, aes(x = prej, y = neg_auth, shape = relevel(cond, "Suppression"),
   theme(legend.title = element_blank(), legend.position = "top",
         text = element_text(size = 14)) +
   labs(x = "Prejudice", y = "Perceived Authenticity")
+ggsave(file = "../docs/figure6.pdf", width = 8, height = 6, dpi = 300)

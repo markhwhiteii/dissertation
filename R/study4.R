@@ -1,4 +1,5 @@
 library(tidyverse)
+library(Rmisc)
 library(mscelns) # www.github.com/markhwhiteii/mscelns
 auth4 <- read_csv("../data/study4.csv") %>% 
   mutate(auth = (auth_auth_1 + auth_auth_2 + auth_auth_3 + auth_auth_4) / 4,
@@ -11,22 +12,18 @@ prop.table(table(auth4$race))
 t_table(data = auth4, dvs= c("auth", "descriptive"), iv = "cond")
 cor.test(~ auth + descriptive, auth4)
 
-ggplot(auth4, aes(x = cond, y = descriptive)) +
-  geom_boxplot() +
-  labs(x = "Normativity of Prejudice", 
-       y = "Perceived Normativity", 
-       title = "Manipulation Check Good", 
-       subtitle = "t(206) = 9.40, p < .001, d = 1.30 95% CI [1.00, 1.60]") +
-  scale_x_discrete(labels = c("High", "Low")) +
-  theme_minimal() +
-  theme(text = element_text(size = 16))
+auth4_sumstats <- summarySE(auth4, measure = "auth", groupvars = "cond")
 
 ggplot(auth4, aes(x = cond, y = auth)) +
-  geom_boxplot() +
+  geom_violin() +
   labs(x = "Normativity of Prejudice", 
-       y = "Perceived Authenticity", 
-       title = "God Dammit", 
-       subtitle = "t(206) = 1.19, p = .236, d = .16 95% CI [-.11, .44]") +
+       y = "Perceived Authenticity") +
   scale_x_discrete(labels = c("High", "Low")) +
-  theme_minimal() +
-  theme(text = element_text(size = 16))
+  theme_light() +
+  theme(text = element_text(size = 14)) +
+  geom_errorbar(data = auth4_sumstats, 
+                mapping = aes(ymax = auth + ci, ymin = auth - ci), 
+                width = .05) +
+  geom_point(data = auth4_sumstats, stat = "identity") +
+  coord_flip()
+ggsave(file = "../docs/figure5.pdf", width = 8, height = 6, dpi = 300)

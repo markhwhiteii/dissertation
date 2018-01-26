@@ -40,3 +40,26 @@ round(summary(model_ksu)$coef["ksu", ], 3)
 round(summary(lm(
   auth ~ ill_imm + ksu * cond_relevel, data = auth2
 ))$coef["ksu", ], 3)
+
+## figure
+auth2_fig <- auth2 %>% 
+  select(cond, auth:ksu) %>% 
+  mutate(id = 1:n()) %>% 
+  gather(group, prej, ill_imm, ksu) %>% 
+  mutate(cond = ifelse(cond == "ill_imm", 
+                       "Illegal Immigrants",
+                       "Kansas State Students"),
+         group = ifelse(group == "ill_imm", 
+                        "Illegal Immigrants",
+                        "Kansas State Students"))
+
+ggplot(auth2_fig, aes(x = prej, y = auth, shape = group, linetype = group)) +
+  geom_jitter(alpha = .9, height = .1) +
+  scale_shape_manual(values = c(16, 21)) +
+  geom_smooth(method = "lm", se = FALSE, color = "black", size = .7) +
+  theme_light() +
+  theme(legend.title = element_blank(), legend.position = "bottom",
+        text = element_text(size = 14)) +
+  facet_wrap(~ cond) +
+  labs(x = "Prejudice", y = "Perceived Authenticity")
+ggsave(file = "../docs/figure2.pdf", width = 8, height = 6, dpi = 300)

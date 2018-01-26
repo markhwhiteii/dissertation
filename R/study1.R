@@ -73,3 +73,27 @@ summary(auth1$age)
 sd(auth1$age)
 round(prop.table(table(auth1$religion)), 2) # 9 = muslim
 round(prop.table(table(auth1$race)), 2) # 8 = white
+
+## figure
+auth1_fig <- auth1 %>% 
+  select(prej_muslim, prej_politician, auth_muslim, auth_politician) %>% 
+  gather(var, value, prej_muslim:auth_politician) %>% 
+  separate(var, c("var", "group")) %>% 
+  group_by(var) %>% 
+  mutate(tmp = 1:n()) %>% 
+  spread(var, value) %>% 
+  select(-tmp) %>% 
+  transmute(
+    Prejudice = prej, 
+    `Perceived Authenticity` = auth, 
+    group = gsub(".*_", "", group),
+    group = ifelse(group == "muslim", "Muslims", "Politicians")
+  )
+
+ggplot(auth1_fig, aes(x = Prejudice, y = `Perceived Authenticity`)) +
+  geom_jitter(alpha = .9, height = .1) +
+  geom_smooth(method = "lm", se = FALSE, color = "black", size = .7) +
+  facet_wrap(~ group) +
+  theme_light() +
+  theme(text = element_text(size = 14))
+ggsave(file = "../docs/figure1.pdf", width = 8, height = 6, dpi = 300)
