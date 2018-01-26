@@ -108,7 +108,7 @@ ggplot() +
   geom_abline(slope = summary(model1)$coef[2, 1], 
               intercept = summary(model1)$coef[1, 1], size = 1) +
   scale_x_continuous(limits = c(-1.5 ,2), name = "Prejudice") +
-  scale_y_continuous(limits = c(-2.5, 2.5), name = "Authenticity") +
+  scale_y_continuous(limits = c(-2.5, 2.5), name = "Perceived Authenticity") +
   theme_light() +
   theme(text = element_text(size = 14))
 ggsave(file = "../docs/figure3.pdf", width = 8, height = 6, dpi = 300)
