@@ -45,3 +45,13 @@ summary(lm(neg_auth ~ prej * cond, dat))
 summary(lm(neg_auth ~ prej * relevel(cond, "Suppression"), dat))
 summary(lm(neg_auth ~ prej * cond + study, dat))
 summary(lm(neg_auth ~ prej * cond * study, dat))
+
+ggplot(dat, aes(x = prej, y = neg_auth, shape = relevel(cond, "Suppression"), 
+                linetype = relevel(cond, "Suppression"))) +
+  geom_jitter(alpha = .9, height = .1) +
+  scale_shape_manual(values = c(16, 21)) +
+  geom_smooth(method = "lm", se = FALSE, color = "black", size = .7) +
+  theme_light() +
+  theme(legend.title = element_blank(), legend.position = "top",
+        text = element_text(size = 14)) +
+  labs(x = "Prejudice", y = "Perceived Authenticity")
