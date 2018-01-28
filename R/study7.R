@@ -43,10 +43,10 @@ ggplot(auth7, aes(x = prej, y = auth,
                   linetype = relevel(cond, ref = "auth_good"))) +
   geom_jitter(alpha = .9, height = .1) +
   scale_shape_manual(values = c(16, 21), name = "Authenticity is:", 
-                     labels = c("Bad", "Good")) +
+                     labels = c("Good", "Bad")) +
   geom_smooth(method = "lm", se = FALSE, color = "black", size = .7) +
   scale_linetype_discrete(name = "Authenticity is:", 
-                          labels = c("Bad", "Good")) +
+                          labels = c("Good", "Bad")) +
   labs(x = "Prejudice", y = "Perceived Authenticity") +
   theme_light() +
   theme(text = element_text(size = 14), legend.position = "top")
