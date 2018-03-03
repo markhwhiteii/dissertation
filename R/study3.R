@@ -102,15 +102,32 @@ levels(auth3$group)[7]
 
 ## figures
 model1_ranefs <- coef(model1)$id
+min_prejudices <- unname(sapply(levels(auth3$id), function(x) {
+  min(auth3$prejudice[auth3$id == x, ])
+}))
+
+max_prejudices <- unname(sapply(levels(auth3$id), function(x) {
+  max(auth3$prejudice[auth3$id == x, ])
+}))
+
 ggplot() +
-  geom_abline(slope = model1_ranefs[ , 2], intercept = model1_ranefs[ , 1], 
-              color = "grey", alpha = .9, size = .25) +
+  geom_segment(
+    aes(x = min_prejudices, xend = max_prejudices, 
+        y = model1_ranefs[, 1] + model1_ranefs[, 2] * min_prejudices,
+        yend = model1_ranefs[, 1] + model1_ranefs[, 2] * max_prejudices),
+    color = "grey", alpha = .9, size = .25 
+  ) +
   geom_abline(slope = summary(model1)$coef[2, 1], 
               intercept = summary(model1)$coef[1, 1], size = 1) +
-  scale_x_continuous(limits = c(-1.5 ,2), name = "Prejudice") +
-  scale_y_continuous(limits = c(-2.5, 2.5), name = "Perceived Authenticity") +
+  scale_x_continuous(
+    limits = c(min(auth3$prejudice, na.rm = TRUE), 
+               max(auth3$prejudice, na.rm = TRUE)), name = "Prejudice"
+  ) +
+  scale_y_continuous(limits = c(-2, 1.5), name = "Perceived Authenticity") +
   theme_light() +
-  theme(text = element_text(size = 14))
+  theme(text = element_text(size = 14), 
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank())
 ggsave(file = "../docs/figure3.pdf", width = 8, height = 6, dpi = 300)
 
 mod3_ss <- mlm_ss(model3, -1, 0, 1)
