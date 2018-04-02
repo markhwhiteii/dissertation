@@ -16,6 +16,8 @@ with(auth7, list(
 
 ## manip check
 t_table(auth7, c("check_self", "check_norm"), "cond", FALSE)
+table(auth7$check_self, auth7$cond)
+round(prop.table(table(auth7$check_self, auth7$cond), 2), 3)
 
 ## scale
 cor.test(~ dvs_1 + dvs_2, auth7)
