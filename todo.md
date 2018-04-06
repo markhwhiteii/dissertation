@@ -1,8 +1,8 @@
 ## where i am, what i am doing
 
-* references  
+* appendices  
 * formatting  
 
 ## to the future, to the horizon
 
-* appendices  
+* defense  
