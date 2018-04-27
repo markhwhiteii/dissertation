@@ -82,3 +82,17 @@ ggplot(auth6, aes(x = prej, y = pos_pc, color = cond)) +
   labs(x = "Prejudice", y = "Perceived 'PC'") +
   theme(text = element_text(size = 16), legend.position = "top",
         legend.title = element_blank())
+
+# bayesian analyses, per holger's defense comment, using study 5 estimates
+# as informative priors
+library(rstanarm)
+set.seed(1839)
+bayes_mod <- stan_glm(
+  formula = neg_auth ~ cond * prej, 
+  family = gaussian(),
+  data = auth6,
+  prior_intercept = normal(5.75882, 0.26368),
+  prior = normal(c(-1.69598, -0.01981, 0.36342), c(0.34549, 0.08474, .11513))
+)
+summary(bayes_mod, digits = 2)
+prop.table(table(as.data.frame(bayes_mod)[["condSuppression:prej"]] > 0))
